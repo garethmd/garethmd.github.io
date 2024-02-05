@@ -16,7 +16,7 @@ timezone: Europe/London
 
 title: neural aspect # the main title
 
-tagline: research to reality # it will display as the sub-title
+tagline: applying research to reality # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Applying AI from research to reality.
