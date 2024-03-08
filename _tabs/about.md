@@ -11,3 +11,10 @@ In 2017 I started getting involved in machine learning and in particular deep le
 In 2024 I started neural aspect to help companies solve their machine learning problems and get the most out of their technology by taking a practical and pragmatic approach to create solutions that work. I generally recommend taking an iterative approach to research and development and focus on delivering value early and often, where possible leveraging existing solutions and services such as serverless. 
 
 If you have a machine learning problem that you need help with to help you build your next big thing then please get in touch.
+
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/garethmd/30min', text: 'Schedule time with me', color: '#f5793b', textColor: '#233142', branding: true }); }</script>
+<!-- Calendly badge widget end -->
