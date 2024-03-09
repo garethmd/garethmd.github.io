@@ -59,11 +59,9 @@ In 2016 Lamb et al introduced an approach called Professor Forcing [6] which att
 ![Professor Forcing](/assets/img/teacher-forcing/ProfessorForcing.jpg)  
 
 
-## 6 Attention Forcing
+## 6. Attention Forcing
 A novel approach proposed in 2020 [7] uses an attention mechanism. Unlike the standard teacher forcing, attention forcing guides the model with generated output history and reference attention, making training stable without the need for a schedule or a discriminator. "The basic idea is to use reference attention (i.e. reference alignment) and generated output to guide the model during training". From what I can understand the attention mechanism is used to align the ground truth output (reference output) to the input at each timestep.
 
-
-<script src="https://www.hackerdraw.com/embed/0e88f72929b4463091a8a311898f81b2"></script>
 
 ## 7. Final Thoughts
 So there's 5 ways to train a sequence model. Teacher Forcing is by far the simplest approach, but potentially leads to weaker models. Free Running is more difficult to train but should lead to more robust models. The other approaches try to find a middle ground between the two.  I'd also like to try the approach proposed by [8] which somehow uses variational inference in the training process.
