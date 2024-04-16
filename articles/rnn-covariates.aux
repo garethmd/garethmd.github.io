@@ -1,0 +1,143 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{salinas2019deepar}
+\citation{elman1990}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{wang2006}
+\citation{puindi2020dynamic}
+\citation{wang2006}
+\citation{salinas2019deepar}
+\citation{salinas2019highdimensional}
+\citation{lai2018modeling}
+\citation{kitaev2020reformer,zhou2021informer,wu2022autoformer,zhang2023crossformer}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{lai2018modeling}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Problem Statement}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Datasets}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Covariate Data Augmentation}{3}{subsection.3.3}\protected@file@percent }
+\citation{HochSchm97}
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{gluonts_arxiv}
+\citation{HochSchm97}
+\citation{salinas2019deepar}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Plots of various correlations between covariate and target variables on the Electricity dataset}}{4}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:my_label}{{1}{4}{Plots of various correlations between covariate and target variables on the Electricity dataset}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Model architectures}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Baseline model (base-lstm)}{4}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Segment model (seg-lstm)}{4}{subsubsection.3.4.2}\protected@file@percent }
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{gluonts_arxiv}
+\citation{loshchilov2019decoupled}
+\citation{hinton2012improving}
+\citation{smith2018superconvergence}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Evaluation Metrics}{5}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Setup}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Data Processing}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Training}{5}{subsection.4.2}\protected@file@percent }
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{oreshkin2020nbeats}
+\citation{salinas2019deepar}
+\citation{oord2016wavenet}
+\citation{gluonts_arxiv}
+\citation{vaswani2023attention}
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\citation{DBLP:conf/nips/GodahewaBWHM21}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Benchmark error for each dataset. Reference values taken from \cite  {DBLP:conf/nips/GodahewaBWHM21}. Forecast horizons are given in the brackets }}{6}{table.caption.3}\protected@file@percent }
+\newlabel{tab:benchmark}{{1}{6}{Benchmark error for each dataset. Reference values taken from \cite {DBLP:conf/nips/GodahewaBWHM21}. Forecast horizons are given in the brackets}{table.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Experimental Procedure}{6}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{6}{section.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces sMAPE results for covariates $k \in \{1, 2, 3\}$ with different $PCC$ values. We set the $H$ to match the Monash benchmark values }}{7}{table.caption.5}\protected@file@percent }
+\newlabel{tab:covariate_results}{{2}{7}{sMAPE results for covariates $k \in \{1, 2, 3\}$ with different $\pearson $ values. We set the $\horizon $ to match the Monash benchmark values}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Covariates}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces base-lstm smape as a function of PCC for 3 covariates}}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:lstm_smape_vs_pearson}{{2}{7}{base-lstm smape as a function of PCC for 3 covariates}{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces base-lstm Hospital smape as a function of forecast horizon for 1 covariate}}{8}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:hospital_smape}{{3}{8}{base-lstm Hospital smape as a function of forecast horizon for 1 covariate}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Tourism smape for 1 covariate for base-lstm and seg-lstm}}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:tourism_base_vs_seg}{{4}{8}{Tourism smape for 1 covariate for base-lstm and seg-lstm}{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Traffic smape comparing univariate to 1, 2 and 3 covariates for base-lstm at a $PCC$ = 0.9}}{8}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:lstm_traffic_univariate_vs_covariate}{{5}{8}{Traffic smape comparing univariate to 1, 2 and 3 covariates for base-lstm at a $\pearson $ = 0.9}{figure.caption.10}{}}
+\citation{wang2006}
+\bibstyle{plain}
+\bibdata{rnn-covariates}
+\bibcite{gluonts_arxiv}{{1}{}{{}}{{}}}
+\bibcite{elman1990}{{2}{}{{}}{{}}}
+\bibcite{DBLP:conf/nips/GodahewaBWHM21}{{3}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{9}{section.6}\protected@file@percent }
+\bibcite{hinton2012improving}{{4}{}{{}}{{}}}
+\bibcite{HochSchm97}{{5}{}{{}}{{}}}
+\bibcite{kitaev2020reformer}{{6}{}{{}}{{}}}
+\bibcite{lai2018modeling}{{7}{}{{}}{{}}}
+\bibcite{loshchilov2019decoupled}{{8}{}{{}}{{}}}
+\bibcite{oreshkin2020nbeats}{{9}{}{{}}{{}}}
+\bibcite{puindi2020dynamic}{{10}{}{{}}{{}}}
+\bibcite{salinas2019highdimensional}{{11}{}{{}}{{}}}
+\bibcite{salinas2019deepar}{{12}{}{{}}{{}}}
+\bibcite{smith2018superconvergence}{{13}{}{{}}{{}}}
+\bibcite{oord2016wavenet}{{14}{}{{}}{{}}}
+\bibcite{vaswani2023attention}{{15}{}{{}}{{}}}
+\bibcite{wang2006}{{16}{}{{}}{{}}}
+\bibcite{wu2022autoformer}{{17}{}{{}}{{}}}
+\bibcite{zhang2023crossformer}{{18}{}{{}}{{}}}
+\bibcite{zhou2021informer}{{19}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces base-lstm Hospital mae as a function of correlation for 1, 2 and 3 covariates}}{11}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:base_lstm_hospital_mae}{{6}{11}{base-lstm Hospital mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Multivariate results with different prediction lengths $O \in \{96,192,336,720\}$. We set the input length $I$ as 36 for ILI and 96 for the others. A lower MSE or MAE indicates a better prediction.}}{11}{table.caption.32}\protected@file@percent }
+\newlabel{tab:Results}{{3}{11}{Multivariate results with different prediction lengths $O \in \{96,192,336,720\}$. We set the input length $I$ as 36 for ILI and 96 for the others. A lower MSE or MAE indicates a better prediction}{table.caption.32}{}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces base-lstm Hospital rmse as a function of correlation for 1, 2 and 3 covariates}}{12}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:base_lstm_hospital_rmse}{{7}{12}{base-lstm Hospital rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces seg-lstm Hospital smape as a function of correlation for 1, 2 and 3 covariates}}{12}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:seg_lstm_hospital_smape}{{8}{12}{seg-lstm Hospital smape as a function of correlation for 1, 2 and 3 covariates}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix / supplemental material}{12}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Hospital base-lstm plots}{12}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Hospital seg-lstm plots}{12}{subsection.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}tourism}{12}{subsection.A.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}traffic}{12}{subsection.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}electricity}{12}{subsection.A.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.6}hyperparameters}{12}{subsection.A.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces seg-lstm Hospital mae as a function of correlation for 1, 2 and 3 covariates}}{13}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:seg_lstm_hospital_mae}{{9}{13}{seg-lstm Hospital mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces seg-lstm Hospital rmse as a function of correlation for 1, 2 and 3 covariates}}{13}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:seg_lstm_hospital_rmse}{{10}{13}{seg-lstm Hospital rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces base-lstm Tourism mae as a function of correlation for 1, 2 and 3 covariates}}{13}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:base_lstm_tourism_mae}{{11}{13}{base-lstm Tourism mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces base-lstm Tourism rmse as a function of correlation for 1, 2 and 3 covariates}}{14}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:base_lstm_tourism_rmse}{{12}{14}{base-lstm Tourism rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces seg-lstm Tourism smape as a function of correlation for 1, 2 and 3 covariates}}{14}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:seg_lstm_tourism_smape}{{13}{14}{seg-lstm Tourism smape as a function of correlation for 1, 2 and 3 covariates}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces seg-lstm Tourism mae as a function of correlation for 1, 2 and 3 covariates}}{14}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:seg_lstm_tourism_mae}{{14}{14}{seg-lstm Tourism mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces seg-lstm Tourism rmse as a function of correlation for 1, 2 and 3 covariates}}{15}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:seg_lstm_tourism_rmse}{{15}{15}{seg-lstm Tourism rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces base-lstm Traffic mae as a function of correlation for 1, 2 and 3 covariates}}{15}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:base_lstm_traffic_mae}{{16}{15}{base-lstm Traffic mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces base-lstm Traffic rmse as a function of correlation for 1, 2 and 3 covariates}}{15}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:base_lstm_traffc_rmse}{{17}{15}{base-lstm Traffic rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces seg-lstm Traffic smape as a function of correlation for 1, 2 and 3 covariates}}{16}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:seg_lstm_traffic_smape}{{18}{16}{seg-lstm Traffic smape as a function of correlation for 1, 2 and 3 covariates}{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces seg-lstm Traffic mae as a function of correlation for 1, 2 and 3 covariates}}{16}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:seg_lstm_traffic_mae}{{19}{16}{seg-lstm Traffic mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces seg-lstm Traffic rmse as a function of correlation for 1, 2 and 3 covariates}}{16}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:seg_lstm_traffic_rmse}{{20}{16}{seg-lstm Traffic rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces base-lstm Electricity mae as a function of correlation for 1, 2 and 3 covariates}}{17}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:base_lstm_electricity_mae}{{21}{17}{base-lstm Electricity mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces base-lstm Electricity rmse as a function of correlation for 1, 2 and 3 covariates}}{17}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:base_lstm_electricity_rmse}{{22}{17}{base-lstm Electricity rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces seg-lstm Electricity smape as a function of correlation for 1, 2 and 3 covariates}}{17}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:seg_lstm_electricity_smape}{{23}{17}{seg-lstm Electricity smape as a function of correlation for 1, 2 and 3 covariates}{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces seg-lstm Electricity mae as a function of correlation for 1, 2 and 3 covariates}}{18}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:seg_lstm_electricity_mae}{{24}{18}{seg-lstm Electricity mae as a function of correlation for 1, 2 and 3 covariates}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces seg-lstm Electricity rmse as a function of correlation for 1, 2 and 3 covariates}}{18}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:seg_lstm_electricity_rmse}{{25}{18}{seg-lstm Electricity rmse as a function of correlation for 1, 2 and 3 covariates}{figure.caption.31}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Hyperparameters}}{18}{table.caption.34}\protected@file@percent }
+\newlabel{hyperparameters}{{4}{18}{Hyperparameters}{table.caption.34}{}}
+\gdef \@abspage@last{18}

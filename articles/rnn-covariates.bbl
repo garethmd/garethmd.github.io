@@ -1,0 +1,86 @@
+\begin{thebibliography}{10}
+
+\bibitem{gluonts_arxiv}
+A.~Alexandrov, K.~Benidis, M.~Bohlke-Schneider, V.~Flunkert, J.~Gasthaus, T.~Januschowski, D.~C. Maddix, S.~Rangapuram, D.~Salinas, J.~Schulz, L.~Stella, A.~C. Türkmen, and Y.~Wang.
+\newblock {GluonTS: Probabilistic Time Series Modeling in Python}.
+\newblock {\em arXiv preprint arXiv:1906.05264}, 2019.
+
+\bibitem{elman1990}
+Jeffrey~L. Elman.
+\newblock Finding structure in time.
+\newblock {\em Cognitive Science}, 14(2):179--211, 1990.
+
+\bibitem{DBLP:conf/nips/GodahewaBWHM21}
+Rakshitha Godahewa, Christoph Bergmeir, Geoffrey~I. Webb, Rob~J. Hyndman, and Pablo Montero-Manso.
+\newblock Monash time series forecasting archive.
+\newblock In {\em NeurIPS Datasets and Benchmarks}. Curran Associates, Inc., 2021.
+
+\bibitem{hinton2012improving}
+Geoffrey~E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and Ruslan~R. Salakhutdinov.
+\newblock Improving neural networks by preventing co-adaptation of feature detectors, 2012.
+
+\bibitem{HochSchm97}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{kitaev2020reformer}
+Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
+\newblock Reformer: The efficient transformer, 2020.
+
+\bibitem{lai2018modeling}
+Guokun Lai, Wei-Cheng Chang, Yiming Yang, and Hanxiao Liu.
+\newblock Modeling long- and short-term temporal patterns with deep neural networks, 2018.
+
+\bibitem{loshchilov2019decoupled}
+Ilya Loshchilov and Frank Hutter.
+\newblock Decoupled weight decay regularization, 2019.
+
+\bibitem{oreshkin2020nbeats}
+Boris~N. Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
+\newblock N-beats: Neural basis expansion analysis for interpretable time series forecasting, 2020.
+
+\bibitem{puindi2020dynamic}
+AC~Puindi and ME~Silva.
+\newblock Dynamic structural models with covariates for short-term forecasting of time series with complex seasonal patterns.
+\newblock {\em J Appl Stat}, 48(5):804--826, 2020.
+
+\bibitem{salinas2019highdimensional}
+David Salinas, Michael Bohlke-Schneider, Laurent Callot, Roberto Medico, and Jan Gasthaus.
+\newblock High-dimensional multivariate forecasting with low-rank gaussian copula processes, 2019.
+
+\bibitem{salinas2019deepar}
+David Salinas, Valentin Flunkert, and Jan Gasthaus.
+\newblock Deepar: Probabilistic forecasting with autoregressive recurrent networks, 2019.
+
+\bibitem{smith2018superconvergence}
+Leslie~N. Smith and Nicholay Topin.
+\newblock Super-convergence: Very fast training of neural networks using large learning rates, 2018.
+
+\bibitem{oord2016wavenet}
+Aaron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio, 2016.
+
+\bibitem{vaswani2023attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need, 2023.
+
+\bibitem{wang2006}
+Shuchun Wang.
+\newblock Exponential smoothing for forecasting and bayesian validation of computer models.
+\newblock 01 2006.
+
+\bibitem{wu2022autoformer}
+Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
+\newblock Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting, 2022.
+
+\bibitem{zhang2023crossformer}
+Yunhao Zhang and Junchi Yan.
+\newblock Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting.
+\newblock In {\em The Eleventh International Conference on Learning Representations}, 2023.
+
+\bibitem{zhou2021informer}
+Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang.
+\newblock Informer: Beyond efficient transformer for long sequence time-series forecasting, 2021.
+
+\end{thebibliography}
