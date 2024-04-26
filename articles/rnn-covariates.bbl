@@ -5,10 +5,30 @@ A.~Alexandrov, K.~Benidis, M.~Bohlke-Schneider, V.~Flunkert, J.~Gasthaus, T.~Jan
 \newblock {GluonTS: Probabilistic Time Series Modeling in Python}.
 \newblock {\em arXiv preprint arXiv:1906.05264}, 2019.
 
+\bibitem{chen2023tsmixer}
+Si-An Chen, Chun-Liang Li, Nate Yoder, Sercan~O. Arik, and Tomas Pfister.
+\newblock Tsmixer: An all-mlp architecture for time series forecasting, 2023.
+
 \bibitem{elman1990}
 Jeffrey~L. Elman.
 \newblock Finding structure in time.
 \newblock {\em Cognitive Science}, 14(2):179--211, 1990.
+
+\bibitem{godahewa_2021_4656140}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Electricity hourly dataset, April 2021.
+
+\bibitem{godahewa_2021_4656014}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Hospital dataset, April 2021.
+
+\bibitem{godahewa_2021_4656096}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Tourism monthly dataset, April 2021.
+
+\bibitem{godahewa_2021_4656135}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Traffic weekly dataset, April 2021.
 
 \bibitem{DBLP:conf/nips/GodahewaBWHM21}
 Rakshitha Godahewa, Christoph Bergmeir, Geoffrey~I. Webb, Rob~J. Hyndman, and Pablo Montero-Manso.
@@ -23,6 +43,12 @@ Geoffrey~E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and Rusl
 Sepp Hochreiter and Jürgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{hyndman2021forecasting}
+R.J. Hyndman and G.~Athanasopoulos.
+\newblock {\em Forecasting: principles and practice}.
+\newblock OTexts, Melbourne, Australia, 3 edition, 2021.
+\newblock Accessed on 2024-03-21.
 
 \bibitem{kitaev2020reformer}
 Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
@@ -73,6 +99,10 @@ Shuchun Wang.
 \bibitem{wu2022autoformer}
 Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
 \newblock Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting, 2022.
+
+\bibitem{zeng2022transformers}
+Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
+\newblock Are transformers effective for time series forecasting?, 2022.
 
 \bibitem{zhang2023crossformer}
 Yunhao Zhang and Junchi Yan.

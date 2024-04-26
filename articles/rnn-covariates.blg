@@ -3,46 +3,54 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: rnn-covariates.aux
 The style file: plain.bst
 Database file #1: rnn-covariates.bib
+Warning--entry type for "godahewa_2021_4656014" isn't style-file defined
+--line 243 of file rnn-covariates.bib
+Warning--entry type for "godahewa_2021_4656096" isn't style-file defined
+--line 257 of file rnn-covariates.bib
+Warning--entry type for "godahewa_2021_4656135" isn't style-file defined
+--line 272 of file rnn-covariates.bib
+Warning--entry type for "godahewa_2021_4656140" isn't style-file defined
+--line 287 of file rnn-covariates.bib
 Warning--empty journal in wang2006
-You've used 19 entries,
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            584 strings with 7364 characters,
-and the built_in function-call counts, 6208 in all, are:
-= -- 523
-> -- 465
+            606 strings with 8066 characters,
+and the built_in function-call counts, 8413 in all, are:
+= -- 704
+> -- 641
 < -- 0
-+ -- 183
-- -- 164
-* -- 441
-:= -- 1078
-add.period$ -- 46
-call.type$ -- 19
-change.case$ -- 139
++ -- 252
+- -- 226
+* -- 598
+:= -- 1456
+add.period$ -- 62
+call.type$ -- 26
+change.case$ -- 191
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 165
-empty$ -- 438
-format.name$ -- 164
-if$ -- 1243
+cite$ -- 27
+duplicate$ -- 219
+empty$ -- 592
+format.name$ -- 226
+if$ -- 1686
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 7
-newline$ -- 86
-num.names$ -- 38
-pop$ -- 202
+int.to.str$ -- 26
+missing$ -- 9
+newline$ -- 116
+num.names$ -- 52
+pop$ -- 285
 preamble$ -- 1
-purify$ -- 120
+purify$ -- 165
 quote$ -- 0
-skip$ -- 148
+skip$ -- 203
 stack$ -- 0
-substring$ -- 168
-swap$ -- 20
+substring$ -- 203
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 102
 warning$ -- 1
-while$ -- 42
-width$ -- 21
-write$ -- 171
-(There was 1 warning)
+while$ -- 56
+width$ -- 28
+write$ -- 233
+(There were 5 warnings)
