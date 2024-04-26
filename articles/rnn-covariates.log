@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  26 APR 2024 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  26 APR 2024 14:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,7 +707,7 @@ File: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png Graphic file (
 <use figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>
 Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png  used on input line 529.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
- [8 <./figures/base-lstm_k_3_smape_vs_pearson.png> <./figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>] (./rnn-covariates.bbl [9] [10]) [11] [12] [13] [14] [15] [16] [17]
+ [8 <./figures/base-lstm_k_3_smape_vs_pearson.png> <./figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>] (./rnn-covariates.bbl [9] [10]) [11]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -717,119 +717,119 @@ Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--840
+Underfull \hbox (badness 10000) in paragraph at lines 616--620
 
  []
 
-[18] [19] [20]
-<figures/base-lstm_k_1_smape_vs_pearson.png, id=367, 1445.4pt x 361.35pt>
+[12] [13] [14]
+<figures/base-lstm_k_1_smape_vs_pearson.png, id=316, 1445.4pt x 361.35pt>
 File: figures/base-lstm_k_1_smape_vs_pearson.png Graphic file (type png)
 <use figures/base-lstm_k_1_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_1_smape_vs_pearson.png  used on input line 1087.
+Package pdftex.def Info: figures/base-lstm_k_1_smape_vs_pearson.png  used on input line 867.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_k_2_smape_vs_pearson.png, id=368, 1445.4pt x 361.35pt>
+<figures/base-lstm_k_2_smape_vs_pearson.png, id=317, 1445.4pt x 361.35pt>
 File: figures/base-lstm_k_2_smape_vs_pearson.png Graphic file (type png)
 <use figures/base-lstm_k_2_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_2_smape_vs_pearson.png  used on input line 1094.
+Package pdftex.def Info: figures/base-lstm_k_2_smape_vs_pearson.png  used on input line 874.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/base-lstm_k_3_smape_vs_pearson.png Graphic file (type png)
 <use figures/base-lstm_k_3_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_3_smape_vs_pearson.png  used on input line 1101.
+Package pdftex.def Info: figures/base-lstm_k_3_smape_vs_pearson.png  used on input line 881.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_1_smape_vs_pearson.png, id=369, 1445.4pt x 361.35pt>
+<figures/seg-lstm_k_1_smape_vs_pearson.png, id=318, 1445.4pt x 361.35pt>
 File: figures/seg-lstm_k_1_smape_vs_pearson.png Graphic file (type png)
 <use figures/seg-lstm_k_1_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_1_smape_vs_pearson.png  used on input line 1112.
+Package pdftex.def Info: figures/seg-lstm_k_1_smape_vs_pearson.png  used on input line 892.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_2_smape_vs_pearson.png, id=370, 1445.4pt x 361.35pt>
+<figures/seg-lstm_k_2_smape_vs_pearson.png, id=319, 1445.4pt x 361.35pt>
 File: figures/seg-lstm_k_2_smape_vs_pearson.png Graphic file (type png)
 <use figures/seg-lstm_k_2_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_2_smape_vs_pearson.png  used on input line 1118.
+Package pdftex.def Info: figures/seg-lstm_k_2_smape_vs_pearson.png  used on input line 898.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_3_smape_vs_pearson.png, id=371, 1445.4pt x 361.35pt>
+<figures/seg-lstm_k_3_smape_vs_pearson.png, id=320, 1445.4pt x 361.35pt>
 File: figures/seg-lstm_k_3_smape_vs_pearson.png Graphic file (type png)
 <use figures/seg-lstm_k_3_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_3_smape_vs_pearson.png  used on input line 1124.
+Package pdftex.def Info: figures/seg-lstm_k_3_smape_vs_pearson.png  used on input line 904.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png, id=372, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png, id=321, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png  used on input line 1135.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png  used on input line 915.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png, id=373, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png, id=322, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png  used on input line 1142.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png  used on input line 922.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png  used on input line 1149.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png  used on input line 929.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png, id=374, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png, id=323, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png  used on input line 1156.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png  used on input line 936.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png, id=375, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png, id=324, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png  used on input line 1168.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png  used on input line 948.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png, id=376, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png, id=325, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png  used on input line 1175.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png  used on input line 955.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png, id=377, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png, id=326, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png  used on input line 1182.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png  used on input line 962.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png  used on input line 1194.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png  used on input line 974.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png, id=378, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png, id=327, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png  used on input line 1201.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png  used on input line 981.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png, id=379, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png, id=328, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png  used on input line 1208.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png  used on input line 988.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png, id=380, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png, id=329, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png  used on input line 1219.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png  used on input line 999.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png, id=381, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png, id=330, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png  used on input line 1226.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png  used on input line 1006.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png, id=382, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png, id=331, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png  used on input line 1233.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png  used on input line 1013.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png, id=383, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png, id=332, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png  used on input line 1245.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png  used on input line 1025.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png, id=384, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png, id=333, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png  used on input line 1252.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png  used on input line 1032.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png, id=385, 1445.4pt x 361.35pt>
+<figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png, id=334, 1445.4pt x 361.35pt>
 File: figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png Graphic file (type png)
 <use figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png  used on input line 1259.
+Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png  used on input line 1039.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
- [21] [22 <./figures/base-lstm_k_1_smape_vs_pearson.png> <./figures/base-lstm_k_2_smape_vs_pearson.png>] [23 <./figures/seg-lstm_k_1_smape_vs_pearson.png> <./figures/seg-lstm_k_2_smape_vs_pearson.png> <./figures/seg-lstm_k_3_smape_vs_pearson.png>] [24 <./figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png>] [25 <./figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png>] [26 <./figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png>] [27 <./figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png>] [28 <./figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png>] (./rnn-covariates.aux)
+ [15] [16 <./figures/base-lstm_k_1_smape_vs_pearson.png> <./figures/base-lstm_k_2_smape_vs_pearson.png>] [17 <./figures/seg-lstm_k_1_smape_vs_pearson.png> <./figures/seg-lstm_k_2_smape_vs_pearson.png> <./figures/seg-lstm_k_3_smape_vs_pearson.png>] [18 <./figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png>] [19 <./figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png>] [20 <./figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png>] [21 <./figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png>] [22 <./figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png>] (./rnn-covariates.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -838,18 +838,18 @@ Package rerunfilecheck Info: File `rnn-covariates.out' has not changed.
 (rerunfilecheck)             Checksum: EB186447869530BEE5F03133036BA72E;4472.
  ) 
 Here is how much of TeX's memory you used:
- 19332 strings out of 474116
- 353367 string characters out of 5743682
- 1964187 words of memory out of 5000000
- 41068 multiletter control sequences out of 15000+600000
- 603842 words of font info for 215 fonts, out of 8000000 for 9000
+ 19298 strings out of 474116
+ 353077 string characters out of 5743682
+ 1963187 words of memory out of 5000000
+ 41066 multiletter control sequences out of 15000+600000
+ 603585 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,99p,1082b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,20n,99p,1082b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rnn-covariates.pdf (28 pages, 2178712 bytes).
+Output written on rnn-covariates.pdf (22 pages, 2157857 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 132 named destinations out of 1000 (max. 500000)
+ 493 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
  48972 words of extra memory for PDF output out of 51595 (max. 10000000)
 
