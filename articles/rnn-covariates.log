@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  26 APR 2024 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  28 APR 2024 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,200 +335,174 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple.sty
-Package: csvsimple 2024/01/19 v2.6.0 LaTeX CSV file processing
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/csvsimple/csvsimple-legacy.sty
-Package: csvsimple-legacy 2024/01/19 version 2.6.0 LaTeX2e CSV file processing
- (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen178
-\pgfutil@tempdimb=\dimen179
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box54
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
- (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
-))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
-)
-\csv@file=\read2
-\c@csvinputline=\count299
-\c@csvrow=\count300
-\c@csvcol=\count301
-\csv@out=\write3
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen180
-\captionmargin=\dimen181
-\caption@leftmargin=\dimen182
-\caption@rightmargin=\dimen183
-\caption@width=\dimen184
-\caption@indent=\dimen185
-\caption@parindent=\dimen186
-\caption@hangindent=\dimen187
+\caption@tempdima=\dimen178
+\captionmargin=\dimen179
+\caption@leftmargin=\dimen180
+\caption@rightmargin=\dimen181
+\caption@width=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count302
-\c@continuedfloat=\count303
+\c@caption@flags=\count299
+\c@continuedfloat=\count300
 Package caption Info: hyperref package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count304
+\c@subfigure=\count301
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count305
+\c@subtable=\count302
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip64
-\multirow@cntb=\count306
+\multirow@cntb=\count303
 \multirow@dima=\skip65
-\bigstrutjot=\dimen188
+\bigstrutjot=\dimen186
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/tabularray/tabularray.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-02-20 L3 programming layer (loader) 
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count307
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box54
 ))
 Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
-\l__tblr_a_int=\count308
-\l__tblr_c_int=\count309
-\l__tblr_r_int=\count310
-\l__tblr_d_dim=\dimen189
-\l__tblr_h_dim=\dimen190
-\l__tblr_o_dim=\dimen191
-\l__tblr_p_dim=\dimen192
-\l__tblr_q_dim=\dimen193
-\l__tblr_r_dim=\dimen194
-\l__tblr_s_dim=\dimen195
-\l__tblr_t_dim=\dimen196
-\l__tblr_v_dim=\dimen197
-\l__tblr_w_dim=\dimen198
-\l__tblr_a_box=\box56
-\l__tblr_b_box=\box57
-\l__tblr_c_box=\box58
-\l__tblr_d_box=\box59
-\g__tblr_table_count_int=\count311
-\c@rownum=\count312
-\c@colnum=\count313
-\c@rowcount=\count314
-\c@colcount=\count315
-\abovesep=\dimen199
-\belowsep=\dimen256
-\leftsep=\dimen257
-\rightsep=\dimen258
-\g_tblr_level_int=\count316
-\g__tblr_data_row_key_count_int=\count317
-\g__tblr_data_column_key_count_int=\count318
-\g__tblr_data_cell_key_count_int=\count319
-\g__tblr_array_int=\count320
-\l__tblr_key_count_int=\count321
-\l__tblr_key_quotient_int=\count322
-\l__tblr_key_quotient_two_int=\count323
-\l__tblr_key_remainder_int=\count324
-\g__tblr_data_str_value_count_int=\count325
-\rulewidth=\dimen259
-\l__tblr_strut_dp_dim=\dimen260
-\l__tblr_strut_ht_dim=\dimen261
-\g__tblr_cell_wd_dim=\dimen262
-\g__tblr_cell_ht_dim=\dimen263
-\g__tblr_cell_head_dim=\dimen264
-\g__tblr_cell_foot_dim=\dimen265
-\l__column_target_dim=\dimen266
-\l__tblr_caption_box=\box60
-\l__tblr_caption_left_box=\box61
-\l__tblr_row_head_box=\box62
-\l__tblr_row_foot_box=\box63
-\l__tblr_row_head_foot_dim=\dimen267
-\tablewidth=\dimen268
-\l__tblr_table_firsthead_box=\box64
-\l__tblr_table_middlehead_box=\box65
-\l__tblr_table_lasthead_box=\box66
-\l__tblr_table_firstfoot_box=\box67
-\l__tblr_table_middlefoot_box=\box68
-\l__tblr_table_lastfoot_box=\box69
-\l__tblr_remain_height_dim=\dimen269
-\l__tblr_long_from_int=\count326
-\l__tblr_long_to_int=\count327
-\l__tblr_curr_i_int=\count328
-\l__tblr_prev_i_int=\count329
-\l__tblr_table_page_int=\count330
-\l__tblr_table_head_box=\box70
-\l__tblr_table_foot_box=\box71
-\l__tblr_table_head_foot_dim=\dimen270
-\l__tblr_table_head_body_foot_dim=\dimen271
-\l__tblr_table_box=\box72
-\l__tblr_table_hlines_box=\box73
-\l__tblr_hline_box=\box74
-\l__tblr_row_box=\box75
-\l__tblr_col_o_wd_dim=\dimen272
-\l__tblr_col_b_wd_dim=\dimen273
-\l__tblr_hline_leftskip_dim=\dimen274
-\l__tblr_hline_rightskip_dim=\dimen275
-\l__tblr_row_ht_dim=\dimen276
-\l__tblr_row_dp_dim=\dimen277
-\l__tblr_row_abovesep_dim=\dimen278
-\l__tblr_row_belowsep_dim=\dimen279
-\l__tblr_row_vlines_box=\box76
-\l__tblr_vline_box=\box77
-\l__tblr_cell_box=\box78
-\l__row_upper_dim=\dimen280
-\l__row_lower_dim=\dimen281
-\l__row_vpace_dim=\dimen282
-\l__tblr_vline_aboveskip_dim=\dimen283
-\l__tblr_vline_belowskip_dim=\dimen284
-\l__tblr_cell_wd_dim=\dimen285
-\l__tblr_cell_ht_dim=\dimen286
-\l__tblr_diag_box=\box79
+\l__tblr_a_int=\count305
+\l__tblr_c_int=\count306
+\l__tblr_r_int=\count307
+\l__tblr_d_dim=\dimen187
+\l__tblr_h_dim=\dimen188
+\l__tblr_o_dim=\dimen189
+\l__tblr_p_dim=\dimen190
+\l__tblr_q_dim=\dimen191
+\l__tblr_r_dim=\dimen192
+\l__tblr_s_dim=\dimen193
+\l__tblr_t_dim=\dimen194
+\l__tblr_v_dim=\dimen195
+\l__tblr_w_dim=\dimen196
+\l__tblr_a_box=\box55
+\l__tblr_b_box=\box56
+\l__tblr_c_box=\box57
+\l__tblr_d_box=\box58
+\g__tblr_table_count_int=\count308
+\c@rownum=\count309
+\c@colnum=\count310
+\c@rowcount=\count311
+\c@colcount=\count312
+\abovesep=\dimen197
+\belowsep=\dimen198
+\leftsep=\dimen199
+\rightsep=\dimen256
+\g_tblr_level_int=\count313
+\g__tblr_data_row_key_count_int=\count314
+\g__tblr_data_column_key_count_int=\count315
+\g__tblr_data_cell_key_count_int=\count316
+\g__tblr_array_int=\count317
+\l__tblr_key_count_int=\count318
+\l__tblr_key_quotient_int=\count319
+\l__tblr_key_quotient_two_int=\count320
+\l__tblr_key_remainder_int=\count321
+\g__tblr_data_str_value_count_int=\count322
+\rulewidth=\dimen257
+\l__tblr_strut_dp_dim=\dimen258
+\l__tblr_strut_ht_dim=\dimen259
+\g__tblr_cell_wd_dim=\dimen260
+\g__tblr_cell_ht_dim=\dimen261
+\g__tblr_cell_head_dim=\dimen262
+\g__tblr_cell_foot_dim=\dimen263
+\l__column_target_dim=\dimen264
+\l__tblr_caption_box=\box59
+\l__tblr_caption_left_box=\box60
+\l__tblr_row_head_box=\box61
+\l__tblr_row_foot_box=\box62
+\l__tblr_row_head_foot_dim=\dimen265
+\tablewidth=\dimen266
+\l__tblr_table_firsthead_box=\box63
+\l__tblr_table_middlehead_box=\box64
+\l__tblr_table_lasthead_box=\box65
+\l__tblr_table_firstfoot_box=\box66
+\l__tblr_table_middlefoot_box=\box67
+\l__tblr_table_lastfoot_box=\box68
+\l__tblr_remain_height_dim=\dimen267
+\l__tblr_long_from_int=\count323
+\l__tblr_long_to_int=\count324
+\l__tblr_curr_i_int=\count325
+\l__tblr_prev_i_int=\count326
+\l__tblr_table_page_int=\count327
+\l__tblr_table_head_box=\box69
+\l__tblr_table_foot_box=\box70
+\l__tblr_table_head_foot_dim=\dimen268
+\l__tblr_table_head_body_foot_dim=\dimen269
+\l__tblr_table_box=\box71
+\l__tblr_table_hlines_box=\box72
+\l__tblr_hline_box=\box73
+\l__tblr_row_box=\box74
+\l__tblr_col_o_wd_dim=\dimen270
+\l__tblr_col_b_wd_dim=\dimen271
+\l__tblr_hline_leftskip_dim=\dimen272
+\l__tblr_hline_rightskip_dim=\dimen273
+\l__tblr_row_ht_dim=\dimen274
+\l__tblr_row_dp_dim=\dimen275
+\l__tblr_row_abovesep_dim=\dimen276
+\l__tblr_row_belowsep_dim=\dimen277
+\l__tblr_row_vlines_box=\box75
+\l__tblr_vline_box=\box76
+\l__tblr_cell_box=\box77
+\l__row_upper_dim=\dimen278
+\l__row_lower_dim=\dimen279
+\l__row_vpace_dim=\dimen280
+\l__tblr_vline_aboveskip_dim=\dimen281
+\l__tblr_vline_belowskip_dim=\dimen282
+\l__tblr_cell_wd_dim=\dimen283
+\l__tblr_cell_ht_dim=\dimen284
+\l__tblr_diag_box=\box78
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box80
+\@tempboxb=\box79
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
  (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen287
-\ar@mcellbox=\box81
-\extrarowheight=\dimen288
-\NC@list=\toks34
+\col@sep=\dimen285
+\ar@mcellbox=\box80
+\extrarowheight=\dimen286
+\NC@list=\toks30
 \extratabsurround=\skip66
 \backup@length=\skip67
-\ar@cellbox=\box82
+\ar@cellbox=\box81
 )
-\rotheadsize=\dimen289
-\c@nlinenum=\count331
-\TeXr@lab=\toks35
+\rotheadsize=\dimen287
+\c@nlinenum=\count328
+\TeXr@lab=\toks31
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (./rnn-covariates.aux)
 \openout1 = `rnn-covariates.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -596,24 +570,24 @@ LaTeX Font Info:    ... okay on input line 111.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 111.
+Package hyperref Info: Link coloring OFF on input line 56.
 (./rnn-covariates.out) (./rnn-covariates.out)
-\@outlinefile=\write4
-\openout4 = `rnn-covariates.out'.
+\@outlinefile=\write3
+\openout3 = `rnn-covariates.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 111.
-Package microtype Info: Applying patch `item' on input line 111.
-Package microtype Info: Applying patch `toc' on input line 111.
-Package microtype Info: Applying patch `eqnum' on input line 111.
-Package microtype Info: Applying patch `footnote' on input line 111.
-Package microtype Info: Applying patch `verbatim' on input line 111.
+LaTeX Info: Redefining \microtypecontext on input line 56.
+Package microtype Info: Applying patch `item' on input line 56.
+Package microtype Info: Applying patch `toc' on input line 56.
+Package microtype Info: Applying patch `eqnum' on input line 56.
+Package microtype Info: Applying patch `footnote' on input line 56.
+Package microtype Info: Applying patch `verbatim' on input line 56.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 111.
+LaTeX Info: Redefining \showhyphens on input line 56.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -621,17 +595,17 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen290
-\scratchbox=\box83
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen291
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count329
+\scratchdimen=\dimen288
+\scratchbox=\box82
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen289
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -646,7 +620,7 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-02-18 L3 Experimental document command parser
 ))
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 114.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 58.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -660,13 +634,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -675,39 +649,59 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Underfull \vbox (badness 5475) has occurred while \output is active []
 
  [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 254.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 196.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3]
-<figures/electricity-pcc.png, id=176, 1084.05pt x 361.35pt>
+)
+<figures/electricity-pcc.png, id=159, 1084.05pt x 361.35pt>
 File: figures/electricity-pcc.png Graphic file (type png)
 <use figures/electricity-pcc.png>
-Package pdftex.def Info: figures/electricity-pcc.png  used on input line 264.
+Package pdftex.def Info: figures/electricity-pcc.png  used on input line 206.
 (pdftex.def)             Requested size: 317.9892pt x 105.99632pt.
- [4 <./figures/electricity-pcc.png>] [5]
+ [3] [4 <./figures/electricity-pcc.png>] [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<figures/base-lstm_k_3_smape_vs_pearson.png, id=234, 1445.4pt x 361.35pt>
-File: figures/base-lstm_k_3_smape_vs_pearson.png Graphic file (type png)
-<use figures/base-lstm_k_3_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_3_smape_vs_pearson.png  used on input line 503.
+<figures/base_k3_pe_pcc.png, id=226, 1445.4pt x 361.35pt>
+File: figures/base_k3_pe_pcc.png Graphic file (type png)
+<use figures/base_k3_pe_pcc.png>
+Package pdftex.def Info: figures/base_k3_pe_pcc.png  used on input line 445.
 (pdftex.def)             Requested size: 357.73405pt x 89.43301pt.
-<figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png, id=237, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png  used on input line 518.
+<figures/models_tour_k1.png, id=229, 1445.4pt x 361.35pt>
+File: figures/models_tour_k1.png Graphic file (type png)
+<use figures/models_tour_k1.png>
+Package pdftex.def Info: figures/models_tour_k1.png  used on input line 460.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 
 Underfull \vbox (badness 7081) has occurred while \output is active []
 
  [7]
-<figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png, id=250, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png  used on input line 529.
+<figures/models_traf_k.png, id=242, 1445.4pt x 361.35pt>
+File: figures/models_traf_k.png Graphic file (type png)
+<use figures/models_traf_k.png>
+Package pdftex.def Info: figures/models_traf_k.png  used on input line 471.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
- [8 <./figures/base-lstm_k_3_smape_vs_pearson.png> <./figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>] (./rnn-covariates.bbl [9] [10]) [11]
+ [8 <./figures/base_k3_pe_pcc.png> <./figures/models_tour_k1.png> <./figures/models_traf_k.png>] (./rnn-covariates.bbl [9]
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+[]\T1/ptm/m/n/10 (+20) Rakshitha Go-da-hewa, Christoph Bergmeir, Ge-of-frey I. Webb, Rob J. Hyn-d-
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 20--24
+\T1/ptm/m/n/10 (+20) man, and Pablo Montero-Manso.  Monash time se-ries fore-cast-ing archive.  In
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+\T1/ptm/m/it/10 (+20) NeurIPS Datasets and Bench-marks\T1/ptm/m/n/10 (+20) . Cur-ran As-so-ciates, Inc., 2021.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+[]$\T1/cmtt/m/n/10 https : / / datasets-[]benchmarks-[]proceedings . neurips . cc / paper / 2021 / hash /
+ []
+
+[10]) [11]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -717,119 +711,119 @@ Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--620
+Underfull \hbox (badness 10000) in paragraph at lines 557--561
 
  []
 
 [12] [13] [14]
-<figures/base-lstm_k_1_smape_vs_pearson.png, id=316, 1445.4pt x 361.35pt>
-File: figures/base-lstm_k_1_smape_vs_pearson.png Graphic file (type png)
-<use figures/base-lstm_k_1_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_1_smape_vs_pearson.png  used on input line 867.
+<figures/base_k1_pe_pcc.png, id=321, 1445.4pt x 361.35pt>
+File: figures/base_k1_pe_pcc.png Graphic file (type png)
+<use figures/base_k1_pe_pcc.png>
+Package pdftex.def Info: figures/base_k1_pe_pcc.png  used on input line 808.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_k_2_smape_vs_pearson.png, id=317, 1445.4pt x 361.35pt>
-File: figures/base-lstm_k_2_smape_vs_pearson.png Graphic file (type png)
-<use figures/base-lstm_k_2_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_2_smape_vs_pearson.png  used on input line 874.
+<figures/base_k2_pe_pcc.png, id=322, 1445.4pt x 361.35pt>
+File: figures/base_k2_pe_pcc.png Graphic file (type png)
+<use figures/base_k2_pe_pcc.png>
+Package pdftex.def Info: figures/base_k2_pe_pcc.png  used on input line 815.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-File: figures/base-lstm_k_3_smape_vs_pearson.png Graphic file (type png)
-<use figures/base-lstm_k_3_smape_vs_pearson.png>
-Package pdftex.def Info: figures/base-lstm_k_3_smape_vs_pearson.png  used on input line 881.
+File: figures/base_k3_pe_pcc.png Graphic file (type png)
+<use figures/base_k3_pe_pcc.png>
+Package pdftex.def Info: figures/base_k3_pe_pcc.png  used on input line 822.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_1_smape_vs_pearson.png, id=318, 1445.4pt x 361.35pt>
-File: figures/seg-lstm_k_1_smape_vs_pearson.png Graphic file (type png)
-<use figures/seg-lstm_k_1_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_1_smape_vs_pearson.png  used on input line 892.
+<figures/seg_k1_pe_pcc.png, id=323, 1445.4pt x 361.35pt>
+File: figures/seg_k1_pe_pcc.png Graphic file (type png)
+<use figures/seg_k1_pe_pcc.png>
+Package pdftex.def Info: figures/seg_k1_pe_pcc.png  used on input line 833.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_2_smape_vs_pearson.png, id=319, 1445.4pt x 361.35pt>
-File: figures/seg-lstm_k_2_smape_vs_pearson.png Graphic file (type png)
-<use figures/seg-lstm_k_2_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_2_smape_vs_pearson.png  used on input line 898.
+<figures/seg_k2_pe_pcc.png, id=324, 1445.4pt x 361.35pt>
+File: figures/seg_k2_pe_pcc.png Graphic file (type png)
+<use figures/seg_k2_pe_pcc.png>
+Package pdftex.def Info: figures/seg_k2_pe_pcc.png  used on input line 839.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg-lstm_k_3_smape_vs_pearson.png, id=320, 1445.4pt x 361.35pt>
-File: figures/seg-lstm_k_3_smape_vs_pearson.png Graphic file (type png)
-<use figures/seg-lstm_k_3_smape_vs_pearson.png>
-Package pdftex.def Info: figures/seg-lstm_k_3_smape_vs_pearson.png  used on input line 904.
+<figures/seg_k3_pe_pcc.png, id=325, 1445.4pt x 361.35pt>
+File: figures/seg_k3_pe_pcc.png Graphic file (type png)
+<use figures/seg_k3_pe_pcc.png>
+Package pdftex.def Info: figures/seg_k3_pe_pcc.png  used on input line 845.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png, id=321, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png  used on input line 915.
+<figures/models_hosp_k.png, id=326, 1445.4pt x 361.35pt>
+File: figures/models_hosp_k.png Graphic file (type png)
+<use figures/models_hosp_k.png>
+Package pdftex.def Info: figures/models_hosp_k.png  used on input line 856.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png, id=322, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png  used on input line 922.
+<figures/models_tour_k.png, id=327, 1445.4pt x 361.35pt>
+File: figures/models_tour_k.png Graphic file (type png)
+<use figures/models_tour_k.png>
+Package pdftex.def Info: figures/models_tour_k.png  used on input line 863.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-File: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png  used on input line 929.
+File: figures/models_traf_k.png Graphic file (type png)
+<use figures/models_traf_k.png>
+Package pdftex.def Info: figures/models_traf_k.png  used on input line 870.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png, id=323, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png  used on input line 936.
+<figures/models_elec_k.png, id=328, 1445.4pt x 361.35pt>
+File: figures/models_elec_k.png Graphic file (type png)
+<use figures/models_elec_k.png>
+Package pdftex.def Info: figures/models_elec_k.png  used on input line 877.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png, id=324, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png  used on input line 948.
+<figures/models_hosp_k1.png, id=329, 1445.4pt x 361.35pt>
+File: figures/models_hosp_k1.png Graphic file (type png)
+<use figures/models_hosp_k1.png>
+Package pdftex.def Info: figures/models_hosp_k1.png  used on input line 889.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png, id=325, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png  used on input line 955.
+<figures/models_hosp_k2.png, id=330, 1445.4pt x 361.35pt>
+File: figures/models_hosp_k2.png Graphic file (type png)
+<use figures/models_hosp_k2.png>
+Package pdftex.def Info: figures/models_hosp_k2.png  used on input line 896.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png, id=326, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png  used on input line 962.
+<figures/models_hosp_k3.png, id=331, 1445.4pt x 361.35pt>
+File: figures/models_hosp_k3.png Graphic file (type png)
+<use figures/models_hosp_k3.png>
+Package pdftex.def Info: figures/models_hosp_k3.png  used on input line 903.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-File: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png  used on input line 974.
+File: figures/models_tour_k1.png Graphic file (type png)
+<use figures/models_tour_k1.png>
+Package pdftex.def Info: figures/models_tour_k1.png  used on input line 915.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png, id=327, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png  used on input line 981.
+<figures/models_tour_k2.png, id=332, 1445.4pt x 361.35pt>
+File: figures/models_tour_k2.png Graphic file (type png)
+<use figures/models_tour_k2.png>
+Package pdftex.def Info: figures/models_tour_k2.png  used on input line 922.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png, id=328, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png  used on input line 988.
+<figures/models_tour_k3.png, id=333, 1445.4pt x 361.35pt>
+File: figures/models_tour_k3.png Graphic file (type png)
+<use figures/models_tour_k3.png>
+Package pdftex.def Info: figures/models_tour_k3.png  used on input line 929.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png, id=329, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png  used on input line 999.
+<figures/models_traf_k1.png, id=334, 1445.4pt x 361.35pt>
+File: figures/models_traf_k1.png Graphic file (type png)
+<use figures/models_traf_k1.png>
+Package pdftex.def Info: figures/models_traf_k1.png  used on input line 940.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png, id=330, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png  used on input line 1006.
+<figures/models_traf_k2.png, id=335, 1445.4pt x 361.35pt>
+File: figures/models_traf_k2.png Graphic file (type png)
+<use figures/models_traf_k2.png>
+Package pdftex.def Info: figures/models_traf_k2.png  used on input line 947.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png, id=331, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png  used on input line 1013.
+<figures/models_traf_k3.png, id=336, 1445.4pt x 361.35pt>
+File: figures/models_traf_k3.png Graphic file (type png)
+<use figures/models_traf_k3.png>
+Package pdftex.def Info: figures/models_traf_k3.png  used on input line 954.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png, id=332, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png  used on input line 1025.
+<figures/models_elec_k1.png, id=337, 1445.4pt x 361.35pt>
+File: figures/models_elec_k1.png Graphic file (type png)
+<use figures/models_elec_k1.png>
+Package pdftex.def Info: figures/models_elec_k1.png  used on input line 966.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png, id=333, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png  used on input line 1032.
+<figures/models_elec_k2.png, id=338, 1445.4pt x 361.35pt>
+File: figures/models_elec_k2.png Graphic file (type png)
+<use figures/models_elec_k2.png>
+Package pdftex.def Info: figures/models_elec_k2.png  used on input line 973.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png, id=334, 1445.4pt x 361.35pt>
-File: figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png Graphic file (type png)
-<use figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png>
-Package pdftex.def Info: figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png  used on input line 1039.
+<figures/models_elec_k3.png, id=339, 1445.4pt x 361.35pt>
+File: figures/models_elec_k3.png Graphic file (type png)
+<use figures/models_elec_k3.png>
+Package pdftex.def Info: figures/models_elec_k3.png  used on input line 980.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
- [15] [16 <./figures/base-lstm_k_1_smape_vs_pearson.png> <./figures/base-lstm_k_2_smape_vs_pearson.png>] [17 <./figures/seg-lstm_k_1_smape_vs_pearson.png> <./figures/seg-lstm_k_2_smape_vs_pearson.png> <./figures/seg-lstm_k_3_smape_vs_pearson.png>] [18 <./figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png>] [19 <./figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png>] [20 <./figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png>] [21 <./figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png>] [22 <./figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png> <./figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png>] (./rnn-covariates.aux)
+ [15] [16 <./figures/base_k1_pe_pcc.png> <./figures/base_k2_pe_pcc.png>] [17 <./figures/seg_k1_pe_pcc.png> <./figures/seg_k2_pe_pcc.png> <./figures/seg_k3_pe_pcc.png>] [18 <./figures/models_hosp_k.png> <./figures/models_tour_k.png> <./figures/models_elec_k.png>] [19 <./figures/models_hosp_k1.png> <./figures/models_hosp_k2.png> <./figures/models_hosp_k3.png>] [20 <./figures/models_tour_k2.png> <./figures/models_tour_k3.png>] [21 <./figures/models_traf_k1.png> <./figures/models_traf_k2.png> <./figures/models_traf_k3.png>] [22 <./figures/models_elec_k1.png> <./figures/models_elec_k2.png> <./figures/models_elec_k3.png>] (./rnn-covariates.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -838,18 +832,18 @@ Package rerunfilecheck Info: File `rnn-covariates.out' has not changed.
 (rerunfilecheck)             Checksum: EB186447869530BEE5F03133036BA72E;4472.
  ) 
 Here is how much of TeX's memory you used:
- 19298 strings out of 474116
- 353077 string characters out of 5743682
- 1963187 words of memory out of 5000000
- 41066 multiletter control sequences out of 15000+600000
- 603585 words of font info for 211 fonts, out of 8000000 for 9000
+ 17996 strings out of 474116
+ 316333 string characters out of 5743682
+ 1964187 words of memory out of 5000000
+ 39801 multiletter control sequences out of 15000+600000
+ 603810 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,20n,99p,1082b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,20n,99p,1082b,701s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rnn-covariates.pdf (22 pages, 2157857 bytes).
+Output written on rnn-covariates.pdf (22 pages, 2164366 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 385 compressed objects within 4 object streams
- 106 named destinations out of 1000 (max. 500000)
+ 498 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
  48972 words of extra memory for PDF output out of 51595 (max. 10000000)
 

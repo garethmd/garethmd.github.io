@@ -1,56 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: rnn-covariates.aux
-The style file: plain.bst
+The style file: unsrtnat.bst
 Database file #1: rnn-covariates.bib
-Warning--entry type for "godahewa_2021_4656014" isn't style-file defined
---line 243 of file rnn-covariates.bib
-Warning--entry type for "godahewa_2021_4656096" isn't style-file defined
---line 257 of file rnn-covariates.bib
-Warning--entry type for "godahewa_2021_4656135" isn't style-file defined
---line 272 of file rnn-covariates.bib
-Warning--entry type for "godahewa_2021_4656140" isn't style-file defined
---line 287 of file rnn-covariates.bib
-Warning--empty journal in wang2006
-You've used 26 entries,
-            2118 wiz_defined-function locations,
-            606 strings with 8066 characters,
-and the built_in function-call counts, 8413 in all, are:
-= -- 704
-> -- 641
-< -- 0
-+ -- 252
-- -- 226
-* -- 598
-:= -- 1456
-add.period$ -- 62
-call.type$ -- 26
-change.case$ -- 191
-chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 219
-empty$ -- 592
-format.name$ -- 226
-if$ -- 1686
-int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 9
-newline$ -- 116
-num.names$ -- 52
-pop$ -- 285
+You've used 23 entries,
+            2481 wiz_defined-function locations,
+            659 strings with 8690 characters,
+and the built_in function-call counts, 8457 in all, are:
+= -- 557
+> -- 689
+< -- 6
++ -- 259
+- -- 208
+* -- 697
+:= -- 1418
+add.period$ -- 64
+call.type$ -- 23
+change.case$ -- 46
+chr.to.int$ -- 18
+cite$ -- 23
+duplicate$ -- 357
+empty$ -- 721
+format.name$ -- 239
+if$ -- 1745
+int.to.chr$ -- 6
+int.to.str$ -- 24
+missing$ -- 7
+newline$ -- 117
+num.names$ -- 69
+pop$ -- 268
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 23
 quote$ -- 0
-skip$ -- 203
+skip$ -- 242
 stack$ -- 0
-substring$ -- 203
-swap$ -- 27
+substring$ -- 88
+swap$ -- 60
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
-warning$ -- 1
-while$ -- 56
-width$ -- 28
-write$ -- 233
-(There were 5 warnings)
+type$ -- 158
+warning$ -- 0
+while$ -- 48
+width$ -- 0
+write$ -- 276

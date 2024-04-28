@@ -1,6 +1,7 @@
-\documentclass[letterpaper]{article}
+\documentclass{article}
+\pdfoutput=1
 
-
+\PassOptionsToPackage{numbers, square}{natbib}
 % ready for submission
 %git \usepackage{neurips_2024}
 
@@ -8,15 +9,12 @@
 % [preprint] option:
 \usepackage[preprint]{neurips_2024}
 
-
 % to compile a camera-ready version, add the [final] option, e.g.:
 %     \usepackage[final]{neurips_2024}
 
 
 % to avoid loading the natbib package, add option nonatbib:
 %    \usepackage[nonatbib]{neurips_2024}
-
-
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
@@ -27,14 +25,11 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{xcolor}         % colors
-
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{authblk}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{csvsimple} % Import the package to handle CSV data
-\usepackage{booktabs} % Import the package for table formatting
 \usepackage{subcaption}
 \usepackage{multirow}
 \usepackage{tabularray}
@@ -44,56 +39,6 @@
 
 
 %Math commands
-\newcommand*\idx[2][]
-{ 
-\def\next{#1}%
-\ifx\empty\next
-  (#2)
-\else
-  (#1, #2)
-\fi
-}
-\newcommand*\elt[3][]
-{ 
-\def\next{#1}%
-\ifx\empty\next
-  #2\idx{#3}
-\else
-  #1\idx{#2,#3}
-\fi
-}
-\newcommand*\pd[3][]
-{ 
-\def\next{#1}%
-\ifx\empty\next
-  \frac{\partial#2}{\partial #3}
-\else
-  \frac{{\partial^{#1} #2}}{\partial#3^{#1}}
-\fi
-}
-\newcommand*\pdn[3]
-{ 
-\frac{{\partial#1}^{#3}}{\partial^{#3} #2}
-}
-\newcommand{\hfor}{\overrightarrow{h}}
-\newcommand{\hback}{\overleftarrow{h}}
-\newcommand{\igate}{i}
-\newcommand{\fgate}{f}
-\newcommand{\ogate}{o}
-\newcommand{\state}{c}
-\newcommand{\hiddenfn}{\mathcal{H}}
-\newcommand{\outputfn}{\mathcal{Y}}
-\newcommand{\kronecker}[2]{\delta_{#1 #2}}
-\newcommand{\len}[1]{|#1|}
-\newcommand{\outelt}{k}
-\newcommand{\wtmat}[2]{W_{#1 #2}}
-\newcommand{\ihwts}{\wtmat{x}{h}}
-\newcommand{\hhwts}{\wtmat{h}{h}}
-\newcommand{\howts}{\wtmat{h}{y}}
-\newcommand{\bias}[1]{b_{#1}}
-\newcommand{\hbias}{\bias{h}}
-\newcommand{\obias}{\bias{y}}
-
 \newcommand{\horizon}{H}
 \newcommand{\contextlength}{C}
 \newcommand{\timeserieslength}{T}
@@ -110,35 +55,32 @@ Neural Aspect \\
 
 \begin{document}
 
-
 \maketitle
 
 \begin{abstract}
-Autoregressive Recurrent Neural Networks are widely employed in time-series forecasting tasks, 
-demonstrating effectiveness in univariate and certain mutlivariate scenarios. However, their inherent structure
-does not readily accommodate the integration of future, time-dependent covariates. A proposed solution, outlined by 
-Salinas et al 2019\cite{salinas2019deepar}, suggests forecasting both covariates and the target variable 
-in a multivariate framework. In this study, we conducted comprehensive tests on publicly available time-series datasets, artificially 
-introducing highly correlated covariates to future time-step values. Our evaluation aimed to assess the 
-performance of an LSTM network when considering these covariates and compare it against a univariate baseline. As part of this study we 
-introduce a novel approach using seasonal time segments in combination with an RNN architecture, which is 
-both simple and extremely effective over long forecast horizons with comparable performance 
-to many state of the art architectures. Our findings from the results of more than 120 models reveal that under certain conditions 
-jointly training covariates with target variables can improve overall performance of the model, but often there exists a significant performance 
-disparity between multivariate and univariate predictions. Surprisingly, even when provided with covariates informing the 
-network about future target values, multivariate predictions exhibited inferior performance. 
+Autoregressive Recurrent Neural Networks are widely employed in time-series forecasting tasks,
+demonstrating effectiveness in univariate and certain multivariate scenarios. However, their inherent structure
+does not readily accommodate the integration of future, time-dependent covariates. A proposed solution, outlined by
+Salinas et al 2019\cite{salinas2019deepar}, suggests forecasting both covariates and the target variable
+in a multivariate framework. In this study, we conducted comprehensive tests on publicly available time-series datasets, artificially
+introducing highly correlated covariates to future time-step values. Our evaluation aimed to assess the
+performance of an LSTM network when considering these covariates and compare it against a univariate baseline. As part of this study we
+introduce a novel approach using seasonal time segments in combination with an RNN architecture, which is
+both simple and extremely effective over long forecast horizons with comparable performance
+to many state of the art architectures. Our findings from the results of more than 120 models reveal that under certain conditions
+jointly training covariates with target variables can improve overall performance of the model, but often there exists a significant performance
+disparity between multivariate and univariate predictions. Surprisingly, even when provided with covariates informing the
+network about future target values, multivariate predictions exhibited inferior performance.
 In essence, compelling the network to predict multiple values can prove detrimental to model performance, even in the presence of informative covariates.
-These results suggest that LSTM architectures may not be suitable for forecasting tasks where covariates 
-would typically enhance predictive accuracy. This has implications for practitioners seeking to leverage 
-autoregressive RNNs in scenarios with time-dependent covariates.
+These results suggest that LSTM architectures may not be suitable for forecasting tasks where predicting covariates
+would typically be expected to enhance model accuracy.
 \end{abstract}
 
 \section{Introduction}
 Forecasting future events, is a critical endeavour across various domains, facilitating informed decision-making
 and resource allocation. These forecasting tasks heavily rely on historical data to make accurate predictions. Given the inherent 
-sequential and time-dependent nature of such data, Recurrent Neural Networks (RNNs) 
-\cite{elman1990} emerge as a natural choice for modeling temporal sequences 
-due to their ability to retain memory across time steps.
+sequential and time-dependent nature of such data, Recurrent Neural Networks (RNNs) emerge as a natural choice for modelling temporal sequences 
+due to their ability to retain memory across time steps.\cite{elman1990}
 
 However, traditional forecasting methods, particularly autoregression, which relies on using past observations to 
 predict future values, encounter challenges as forecasting horizons extend. As predictions are recursively 
@@ -160,7 +102,7 @@ they must either be estimated beforehand or predicted simultaneously with the ta
 prediction multivariate.
 
 In this study, we aim to evaluate the efficacy of employing autoregressive multivariate Long Short-Term Memory 
-(LSTM) \cite{HochSchm97} models compared to traditional univariate models without covariates. We conduct our investigation 
+(LSTM) models compared to traditional univariate models without covariates. We conduct our investigation 
 within the context of well-established time series datasets from the Monash repository \cite{DBLP:conf/nips/GodahewaBWHM21}, 
 a widely recognised benchmark for evaluating forecasting models. Our methodology involves constructing baseline univariate models 
 using an autoregressive LSTM, ensuring their performance aligns with established benchmarks. Subsequently, we 
@@ -169,8 +111,8 @@ the network in predicting both the target variable and the associated covariate.
 of our models based on predicting target values over a forecast horizon $\horizon$.
 
 The contributions of this study are:
-1. A novel approach to modelling timeseries data with LSTM networks that produce state of the art results in a univariate setting across 
-long forecast horizons.
+1. A novel approach to modelling timeseries data with LSTM networks that is extremely effective in a univariate setting and does not 
+require specialised feature engineering.
 2. Quantification of the effect cross correlation between covariates and target variables has on the resulting performance of a trained model.
 3. An evaluation of how model performance is affected as forecast horizons increase. 
 4. A simple approach to synthesise covariates from univariate datasets for running experiments in a controlled and repeatable manner.
@@ -179,13 +121,13 @@ long forecast horizons.
 \section{Related Work}
 The use of covariates in State Space models have been studied notably by Wang\cite{wang2006} and more recently by Puindi and Silba 
 \cite{puindi2020dynamic}. Wang proposed ESCov a method that extended HoltWinters to utilise informative covariates which were calculated in advance 
-of the main modelling task. Wang observed that the inclusion of covariates could improve the overall accuracy of the model the degree to which is in part
+of the main modelling task. Wang observed that the inclusion of covariates could improve the overall accuracy of the model, the degree to which is in part
 determined by the quality of the predictions of the covariates. 
 
 Lai et al. \cite{lai2018modeling} developed LSTNet, which supports multivariate scenarios and which combines a CNN and a GRU to capture both 
 long and short-term dependencies over time, as well as local dependencies between variables. 
 
-Salinas et al. \cite{salinas2019deepar} proposed DeepAR an autoregressive LSTM model intended to be used specifically 
+Salinas et al. \cite{salinas2019deepar} proposed DeepAR, an autoregressive LSTM model intended to be used specifically 
 for time-series forecasting. Their approach included time dependent covariates as inputs into each timestep combining them 
 with the outputs of the previous timestep to assist the network.
 
@@ -197,13 +139,13 @@ with a low rank covariance structure.
 
 More recently, transformer-based models such as Reformer, Informer, Autoformer, and CrossFormer
 \cite{kitaev2020reformer,zhou2021informer,wu2022autoformer, zhang2023crossformer} have emerged for multivariate predictions. Notably Informer used a 
-Weather, WTH,  which could be configured to use in a covariate settting. These models extract feature maps from the temporal dimension and extend the 
+Weather, WTH,  which could be configured to use in a covariate setting. These models extract feature maps from the temporal dimension and extend the 
 vanilla Transformer attention mechanism to produce more accurate predictions over longer forecast horizons in an autoregressive manner. 
 A study by Zeng et al \cite{zeng2022transformers} found that the inclusion of covariates in transformer networks were largely ineffective, proposing instead 
 simple linear models with seasonal decomposition similar to traditional state space ETS models.
 
-Chen et al \cite{chen2023tsmixer}, proposed TSMixer a FCC architecture which reshapes the inputs to force the network to learn across feature and temporal dimension in an 
-attempt to improve multivariates performance.
+Chen et al, proposed TSMixer \cite{chen2023tsmixer}, a FCC architecture which reshapes the inputs to force the network to learn across feature and temporal dimension in an 
+attempt to improve multivariate performance.
 
 \section{Methodology}
 In this section, we outline our methodology for assessing the effectiveness of LSTM networks in 
@@ -251,8 +193,8 @@ Noise is added to each leading indicator to control the level of cross correlati
 corresponding target. The noise is calculated as follows: 
 
 \begin{itemize}
-\item for each time series in the dataset the mean $\mu$ and standard deviation $\sigma$ of $y$ are computed.
-\item for each covariate value a sample $\epsilon$ is drawn from a unit normal distribution; $\epsilon \sim N(0,1)$ 
+\item For each time series in the dataset the mean $\mu$ and standard deviation $\sigma$ of $y$ are computed.
+\item For each covariate value a sample $\epsilon$ is drawn from a unit normal distribution; $\epsilon \sim N(0,1)$ 
 \item The noise is computed by scaling the random $\epsilon$ values by $\mu$ and $\sigma$ and then further
 scaled by an error level factor $\gamma$:
 $\gamma \in \{0, 0.1, ..., 1.9\}$
@@ -271,16 +213,16 @@ comparable to autocorrelation of lagged variables used in techniques such as ARI
 
 \subsection{Model architectures}
 To better understand how covariates affect our results and attribute their impact more accurately, 
-we employed two straightforward LSTM~\cite{HochSchm97} based architectures. Unlike the deep learning models benchmarked 
+we employed two straightforward LSTM based architectures. Unlike the deep learning models benchmarked 
 by Monash \cite{DBLP:conf/nips/GodahewaBWHM21} which used the GluonTS \cite{gluonts_arxiv} framework 
-for training we did not add covariates such as lag variables and static time-series identifiers in order to 
-accurately evaluate the true effect of the augmented leading covarariates. 
+for training, we did not add covariates such as lag variables and static time-series identifiers in order to 
+accurately evaluate the true effect of the augmented leading covariates. 
 
 Of these models: base-lstm is used as a baseline and is benchmarked against the Monash repository results using the same context length $\contextlength$
 and forecast horizons $\horizon$; while the seg-lstm model is intended to be more capable of forecasting over longer horizons using longer context lengths.
 
 \subsubsection{Baseline model (base-lstm)}
-Baseline is a vanilla LSTM~\cite{HochSchm97} with a scaling strategy inspired by DeepAR\cite{salinas2019deepar}.
+Baseline is a vanilla LSTM with a scaling strategy inspired by DeepAR\cite{salinas2019deepar}.
 The input data is scaled using mean absolute scaling within each mini-batch. An additional time dependent feature $\log(scale)$ is concatenated with the input vector. The scaled values are fed into a $2$ layer 
 LSTM with $40$ cells in each layer. The output of the LSTM is then fed into a single fully connected layer 
 with $40$ cells followed by ReLU activations. Finally, an output layer generates a vector $\mathbf{z_t}$ 
@@ -289,14 +231,14 @@ the predictions back into the original scale.
 
 \subsubsection{Segment model (seg-lstm)}
 The seg-lstm model addresses the limitation of the baseline model in forecasting over longer time horizons. 
-Our approach aims to maximize historical data without relying on extra features, such as lag variables that get applied 
+Our approach aims to maximise historical data without relying on extra features, such as lag variables that get applied 
 with GluonTS \cite{gluonts_arxiv} models and is typical with transformer based approaches \cite{zhou2021informer,wu2022autoformer,zhang2023crossformer,kitaev2020reformer}.
 
 To achieve this, we propose an LSTM with a simple modification to handle input data. We reshape each context window of $\contextlength$ values 
 into a vector of dimension $\frac{\contextlength}{d} \times d$, where $d$ represents the segment length, typically set to the seasonality
  of the data (e.g., 24 for hourly readings).
 
-The model architecture is similar to the base-lstm, comprising of a straightforward LSTM with 2 layers and 40 cells in each layer, followed by fully connected 
+The model architecture is similar to the base-lstm, consisting of a straightforward LSTM with 2 layers and 40 cells in each layer, followed by fully connected 
 layers with ReLU activations. We use mean absolute scaling but omit the additional time-dependent feature $\log(\text{scale})$.
 
 During training, we compute the loss by comparing the last timestep of each segment output to the corresponding timestep in the 
@@ -331,17 +273,17 @@ The dataset is partitioned into training, validation, and test sets, following a
 The validation set excludes values within the last forecast horizon, while the training set excludes 
 values from the last two forecast horizons. Evaluation for both validation and testing is conducted 
 on the last complete forecast horizon period of each time series. This approach ensures direct comparison to 
-the Monash benchmarks \cite{DBLP:conf/nips/GodahewaBWHM21} and maximizes the 
-utilization of training data while preventing data leakage between the three sets.
+the Monash benchmarks \cite{DBLP:conf/nips/GodahewaBWHM21} and maximises the 
+utilisation of training data while preventing data leakage between the three sets.
 
-We employ a variation of mean absolute scaling to standardize the data within each mini-batch (local normalisation), 
+We employ a variation of mean absolute scaling to standardise the data within each mini-batch (local normalisation), 
 accounting for batches with values equal to zero.
 \begin{equation}
 \text{scale}(\mathbf{z}) = 
 \text{max}( \frac{ \sum_{\ts=1}^{\contextlength}|z^{(y)}_\ts|}{\contextlength},  1)
 \end{equation}
 \subsection{Training}
-We utilized teacher forcing which trains the network to predict a single
+We utilised teacher forcing which trains the network to predict a single
 timestep ahead and calculated the loss for the entire sequence (ie the context length and the forecast horizon).
 The network was trained as a regression task with a Smooth F1 Loss objective.
 \begin{equation}
@@ -352,18 +294,18 @@ The network was trained as a regression task with a Smooth F1 Loss objective.
 \end{cases}
 \end{equation}
 A number of hyperparameters were set to match the default
-GluonTS parameters \cite{gluonts_arxiv} including weight decay \cite{loshchilov2019decoupled} of $1e-8$; dropout 
-\cite{hinton2012improving} of 0.1; and a learning rate of 0.001. We used OneCycle \cite{smith2018superconvergence} scheduling to anneal and then 
-decrease the learning rate over 100 epochs. The models were optimised using AdamW. We made no attempt to optimise hyperparameters. 
+GluonTS parameters \cite{gluonts_arxiv} including weight decay of $1e-8$; dropout  of 0.1; and a learning rate of 0.001. 
+We used OneCycle scheduling to anneal and then 
+decrease the learning rate\cite{smith2018superconvergence} over 100 epochs. The models were optimised using AdamW. We made no attempt to optimise hyperparameters. 
 
 Performance was measured on the validation set at the end of each epoch by measuring the Smooth L1 loss using
-free running (ie using the predicted outputs of one timestep as the input into the next). The model checkpoint
-with the lowest validation loss was selected for testing. The hidden state of the the LSTM was initialised to $0$. 
+free running (i.e. using the predicted outputs of one timestep as the input into the next). The model checkpoint
+with the lowest validation loss was selected for testing. The hidden state of the LSTM was initialised to $0$. 
 
 \subsection{Experimental Procedure}
 Initially, we trained base-lstm models for each dataset using the context length and forecast horizon values consistent with 
 those used in the Monash repository which allowed us to compare the performance of our models 
-against benchamrked results. 
+against benchmarked results. 
 
 Next, we trained and evaluated models under various scenarios involving 1, 2 and 3 
 covariates. For the number of covariates in the scenario a set of base-lstm models were trained with increased noise to vary the 
@@ -445,7 +387,7 @@ results) and show the sMAPE for each dataset at the full forecast horizons as me
 compare it to the univariate case where k=0. To some extent the relative differences between the covariate and univariate cases are somewhat specific to the 
 dataset. The models trained on \texttt{Traffic} appear to benefit the most from covariates giving improved results in 14 of the 18 experiments, which is perhaps to be expected 
 as this has the shortest forecast horizon. Conversely models performed worst on, \texttt{Tourism} only outperforming univariate in 5 scenarios, and that was with perfectly correlated covariates.
-\text{Electricity}, which has longest forecast horizon of 168, marginally outperformed univariate in both models with $\pearson$ = 1.0 using 1 and 2 covariates. 
+\text{Electricity}, which has the longest forecast horizon of 168, marginally outperformed univariate in both models with $\pearson$ = 1.0 using 1 and 2 covariates. 
 
 \begin{table}[tbp]
   \caption{sMAPE results for covariates $k \in \{0, 1, 2, 3\}$ and cross correlation $\pearson \in \{1, 0.9, 0.5\}$}
@@ -500,7 +442,7 @@ in a non linear manner, with the error increasing rapidly as the PCC falls to 0.
 and \texttt{Electricity} are still worse than the univariate case at correlation levels less than 0.9.
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/base-lstm_k_3_smape_vs_pearson.png}
+\includegraphics[width=0.9\textwidth]{figures/base_k3_pe_pcc.png}
 \caption{base-lstm smape as a function of PCC for 3 covariates}
 \label{fig:base_lstm_k_3_smape_vs_pearson}
 \end{figure}
@@ -510,27 +452,27 @@ a $\pearson$ value of 0.9 and below when forecast horizon exceeds 3-4 timesteps.
 a function of forecast horizon on the \texttt{Tourism} dataset.
 \subsubsection{Comparing base-lstm and seg-lstm performance}
 Looking at the differences between base-lstm and seg-lstm. We see that both models share common characteristics when examining the errors on forecast horizon trajectories. 
-The stronger model in univariate scenarios will also perform better in a covariate setting. Figure \ref{fig:tourism_base_vs_seg} shows how the sMAPE acumulates over the full forecast horizon on 
+The stronger model in univariate scenarios will also perform better in a covariate setting. Figure \ref{fig:tourism_base_vs_seg} shows how the sMAPE accumulates over the full forecast horizon on 
 the \texttt{Tourism} dataset for both base-lstm and seg-lstm. Note how the variance of errors is smaller across the range of PCC values on 
 the stronger seg-lstm model, indicating that the additional noise added to lower PCC covariates combines with the model's inherent performance limitations to compound errors over time.
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=1.\textwidth]{figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png}
+  \includegraphics[width=1.\textwidth]{figures/models_tour_k1.png}
   \caption{\texttt{Tourism} smape for 1 covariate for base-lstm and seg-lstm}
   \label{fig:tourism_base_vs_seg}
   \end{figure}
 \subsubsection{Comparing covariates across Forecast Horizon trajectories}
-Turning to comparing multiple covariates. Fig \ref{fig:lstm_traffic_univariate_vs_covariate} show sMAPE across full forecast horizons for 1, 2 and 3 covariates on 
+Turning to comparing multiple covariates. Fig \ref{fig:lstm_traffic_univariate_vs_covariate} shows sMAPE across full forecast horizons for 1, 2 and 3 covariates on 
 the \texttt{Traffic} dataset with the special case of perfect correlation (PCC = 1). Note that the error reduces as the number of covariates increases. 
-Interestingly, the addition of each covariate shifts the onset of significant errors by one timestep. (ie errors start to accumulate at t=1 for k=1, 
+Interestingly, the addition of each covariate shifts the onset of significant errors by one timestep. (i.e. errors start to accumulate at t=1 for k=1, 
 at t=2 for k=2 and t=3 for k=3). We observe identical patterns on the other datasets tested.
 \begin{figure}[ht]
 \centering
-\includegraphics[width=1.\textwidth]{figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png}
+\includegraphics[width=1.\textwidth]{figures/models_traf_k.png}
 \caption{\texttt{Traffic} smape comparing univariate to 1, 2 and 3 covariates for base-lstm at a $\pearson$ = 0.9}
 \label{fig:lstm_traffic_univariate_vs_covariate}
 \end{figure}
-Clearly the network is effectively utilising the covariates to learn the values for the first k timesteps, however it is conceiveable that a model may be using covariate 
+Clearly the network is effectively utilising the covariates to learn the values for the first k timesteps, however it is conceivable that a model may be using covariate 
 values from the current timestep alone rather than utilising covariates from previous timesteps. For example in the case of 3 covariates  ${x_t^1, x_t^2, x_t^3}$ 
 are leading indicators for target values ${y_t, y_{t+1}, y_{t+2}}$, and therefore the network does not require covariates from previous timesteps in order to predict the subsequent 
 3 timesteps to produce the error improvement that we observe. Consequently we don't know if the model is utilising covariates across the temporal dimension 
@@ -548,11 +490,11 @@ long forecast horizons without necessitating the need for additional features.
 
 Analysis of results has led us to reach the following conclusions:
 \begin{itemize}
-\item An LSTM is able to model both temporal and feature dynamics at short forecast horizons in the presence short lead timestep covariates.
+\item An LSTM is able to model both temporal and feature dynamics at short forecast horizons in the presence of short lead timestep covariates.
 \item The effect covariates have on performance is, in part, related to the characteristics of the task (dataset) that the model is trained on.
 \item The magnitude of the performance gain is related to the strength of the correlation between the covariate and the target variables and that this relationship 
-is non-linear with performance degrading most rapidly for $\pearson$ levels between 1.0 and 0.9. 
-\item In most cases the presence of predicted covariates becomes either ineffective or a hinderence to performance as forecast horizons extend.
+is nonlinear with performance degrading most rapidly for $\pearson$ levels between 1.0 and 0.9. 
+\item In most cases the presence of predicted covariates becomes either ineffective or a hindrance to performance as forecast horizons extend.
 \item The number of timesteps covered by multiple covariates can offset the accumulation of error equal to the number of timesteps. 
 \item The magnitude of the performance advantage from using covariates is related to the model's underlying ability to forecast accurately. 
 Models that perform better in a univariate setting will produce comparatively better results in a 
@@ -575,9 +517,8 @@ Additionally, further exploration with artificial datasets could investigate the
 extending the covariate lead time offset on target variables, non-stationarity or negative correlations. This raises the question of whether providing 
 the network with information regarding the temporal influence of each leading indicator on the target variable could simplify the learning task.
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrtnat}
 \bibliography{rnn-covariates}  % replace 'your_bib_file_name' with the name of your .bib file, without the extension
-
 
 
 \FloatBarrier
@@ -586,7 +527,7 @@ the network with information regarding the temporal influence of each leading in
 \section{Appendix / supplemental material}
 \subsection{Datasets}
 All datasets used in this study are available through the Monash repository https://forecastingdata.org/ 
-and are distributed under a Creative Commons Attribution 4.0 International license.
+and are distributed under a Creative Commons Attribution 4.0 International licence.
 
 \subsection{hyperparameters}
 \begin{table}[htbp]
@@ -864,21 +805,21 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/base-lstm_k_1_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/base_k1_pe_pcc.png}
 \caption{base-lstm smape as a function of PCC for 1 covariate}
 \label{fig:base_lstm_k_1_smape_vs_pearson}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/base-lstm_k_2_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/base_k2_pe_pcc.png}
 \caption{base-lstm smape as a function of PCC for 2 covariates}
 \label{fig:base_lstm_k_2_smape_vs_pearson}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/base-lstm_k_3_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/base_k3_pe_pcc.png}
 \caption{base-lstm smape as a function of PCC for 3 covariates}
 \label{fig:appendix_base_lstm_k_3_smape_vs_pearson}
 \end{subfigure}
@@ -889,19 +830,19 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 \begin{figure}[ht]
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/seg-lstm_k_1_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/seg_k1_pe_pcc.png}
 \caption{seg-lstm smape as a function of PCC for 1 covariate}
 \label{fig:seg_lstm_k_1_smape_vs_pearson}
 \end{subfigure}
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/seg-lstm_k_2_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/seg_k2_pe_pcc.png}
 \caption{seg-lstm smape as a function of PCC for 2 covariates}
 \label{fig:seg_lstm_k_2_smape_vs_pearson}
 \end{subfigure}
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/seg-lstm_k_3_smape_vs_pearson.png}
+\includegraphics[width=\textwidth]{figures/seg_k3_pe_pcc.png}
 \caption{seg-lstm smape as a function of PCC for 3 covariates}
 \label{fig:seg_lstm_k_3_smape_vs_pearson}
 \end{subfigure}
@@ -912,28 +853,28 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 \begin{figure}[tbp]
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_hosp_k.png}
 \caption{hospital forecast horizon trajectories}
 \label{fig:base-lstm_seg-lstm_hospital_k_0_1_2_3_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_tour_k.png}
 \caption{tourism forecast horizon trajectories}
 \label{fig:base-lstm_seg-lstm_tourism_k_0_1_2_3_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_traf_k.png}
 \caption{traffic forecast horizon trajectories}
 \label{fig:base-lstm_seg-lstm_traffic_k_0_1_2_3_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_elec_k.png}
 \caption{electricity forecast horizon trajectories}
 \label{fig:base-lstm_seg-lstm_electricity_k_0_1_2_3_trajectory}
 \end{subfigure}
@@ -945,21 +886,21 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 \begin{figure}[tbp]
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_hospital_k_1_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_hosp_k1.png}
 \caption{hospital forecast horizon trajectories k=1}
 \label{fig:base-lstm_seg-lstm_hospital_k_1_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_hospital_k_2_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_hosp_k2.png}
 \caption{hospital forecast horizon trajectories k=2}
 \label{fig:base-lstm_seg-lstm_hospital_k_2_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_hospital_k_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_hosp_k3.png}
 \caption{hospital forecast horizon trajectories k=3}
 \label{fig:base-lstm_seg-lstm_hospital_k_3_trajectory}
 \end{subfigure}
@@ -971,21 +912,21 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_tourism_k_1_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_tour_k1.png}
 \caption{tourism forecast horizon trajectories k=1}
 \label{fig:base-lstm_seg-lstm_tourism_k_1_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_tourism_k_2_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_tour_k2.png}
 \caption{tourism forecast horizon trajectories k=2}
 \label{fig:base-lstm_seg-lstm_tourism_k_2_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_tourism_k_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_tour_k3.png}
 \caption{tourism forecast horizon trajectories k=3}
 \label{fig:base-lstm_seg-lstm_tourism_k_3_trajectory}
 \end{subfigure}
@@ -996,21 +937,21 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 \begin{figure}[tbp]
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_traffic_k_1_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_traf_k1.png}
 \caption{traffic forecast horizon trajectories k=1}
 \label{fig:base-lstm_seg-lstm_traffic_k_1_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_traffic_k_2_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_traf_k2.png}
 \caption{traffic forecast horizon trajectories k=2}
 \label{fig:base-lstm_seg-lstm_traffic_k_2_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_traffic_k_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_traf_k3.png}
 \caption{traffic forecast horizon trajectories k=3}
 \label{fig:base-lstm_seg-lstm_traffic_k_3_trajectory}
 \end{subfigure}
@@ -1022,21 +963,21 @@ Figures \ref{fig:base-lstm_seg-lstm_electricity_trajectory} plos sMAPE electrici
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_electricity_k_1_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_elec_k1.png}
 \caption{electricity forecast horizon trajectories k=1}
 \label{fig:base-lstm_seg-lstm_electricity_k_1_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_electricity_k_2_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_elec_k2.png}
 \caption{electricity forecast horizon trajectories k=2}
 \label{fig:base-lstm_seg-lstm_electricity_k_2_trajectory}
 \end{subfigure}
 
 \begin{subfigure}{\textwidth}
 \centering
-\includegraphics[width=\linewidth]{figures/base-lstm_seg-lstm_electricity_k_3_trajectory.png}
+\includegraphics[width=\linewidth]{figures/models_elec_k3.png}
 \caption{electricity forecast horizon trajectories k=3}
 \label{fig:base-lstm_seg-lstm_electricity_k_3_trajectory}
 \end{subfigure}

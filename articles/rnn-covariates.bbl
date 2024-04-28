@@ -1,116 +1,117 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{gluonts_arxiv}
-A.~Alexandrov, K.~Benidis, M.~Bohlke-Schneider, V.~Flunkert, J.~Gasthaus, T.~Januschowski, D.~C. Maddix, S.~Rangapuram, D.~Salinas, J.~Schulz, L.~Stella, A.~C. Türkmen, and Y.~Wang.
-\newblock {GluonTS: Probabilistic Time Series Modeling in Python}.
-\newblock {\em arXiv preprint arXiv:1906.05264}, 2019.
+\bibitem[Salinas et~al.(2019{\natexlab{a}})Salinas, Flunkert, and Gasthaus]{salinas2019deepar}
+David Salinas, Valentin Flunkert, and Jan Gasthaus.
+\newblock Deepar: Probabilistic forecasting with autoregressive recurrent networks, 2019{\natexlab{a}}.
 
-\bibitem{chen2023tsmixer}
-Si-An Chen, Chun-Liang Li, Nate Yoder, Sercan~O. Arik, and Tomas Pfister.
-\newblock Tsmixer: An all-mlp architecture for time series forecasting, 2023.
-
-\bibitem{elman1990}
+\bibitem[Elman(1990)]{elman1990}
 Jeffrey~L. Elman.
 \newblock Finding structure in time.
-\newblock {\em Cognitive Science}, 14(2):179--211, 1990.
+\newblock \emph{Cognitive Science}, 14\penalty0 (2):\penalty0 179--211, 1990.
+\newblock \doi{https://doi.org/10.1207/s15516709cog1402\_1}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1}.
 
-\bibitem{godahewa_2021_4656140}
-Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
-\newblock Electricity hourly dataset, April 2021.
-
-\bibitem{godahewa_2021_4656014}
-Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
-\newblock Hospital dataset, April 2021.
-
-\bibitem{godahewa_2021_4656096}
-Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
-\newblock Tourism monthly dataset, April 2021.
-
-\bibitem{godahewa_2021_4656135}
-Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
-\newblock Traffic weekly dataset, April 2021.
-
-\bibitem{DBLP:conf/nips/GodahewaBWHM21}
+\bibitem[Godahewa et~al.(2021{\natexlab{a}})Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso]{DBLP:conf/nips/GodahewaBWHM21}
 Rakshitha Godahewa, Christoph Bergmeir, Geoffrey~I. Webb, Rob~J. Hyndman, and Pablo Montero-Manso.
 \newblock Monash time series forecasting archive.
-\newblock In {\em NeurIPS Datasets and Benchmarks}. Curran Associates, Inc., 2021.
+\newblock In \emph{NeurIPS Datasets and Benchmarks}. Curran Associates, Inc., 2021{\natexlab{a}}.
+\newblock URL \url{https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/eddea82ad2755b24c4e168c5fc2ebd40-Abstract-round2.html}.
 
-\bibitem{hinton2012improving}
-Geoffrey~E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and Ruslan~R. Salakhutdinov.
-\newblock Improving neural networks by preventing co-adaptation of feature detectors, 2012.
+\bibitem[Wang(2006)]{wang2006}
+Shuchun Wang.
+\newblock Exponential smoothing for forecasting and bayesian validation of computer models, 01 2006.
 
-\bibitem{HochSchm97}
-Sepp Hochreiter and Jürgen Schmidhuber.
-\newblock Long short-term memory.
-\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+\bibitem[Puindi and Silva(2020)]{puindi2020dynamic}
+AC~Puindi and ME~Silva.
+\newblock Dynamic structural models with covariates for short-term forecasting of time series with complex seasonal patterns.
+\newblock \emph{J Appl Stat}, 48\penalty0 (5):\penalty0 804--826, 2020.
+\newblock \doi{10.1080/02664763.2020.1748178}.
 
-\bibitem{hyndman2021forecasting}
-R.J. Hyndman and G.~Athanasopoulos.
-\newblock {\em Forecasting: principles and practice}.
-\newblock OTexts, Melbourne, Australia, 3 edition, 2021.
-\newblock Accessed on 2024-03-21.
-
-\bibitem{kitaev2020reformer}
-Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
-\newblock Reformer: The efficient transformer, 2020.
-
-\bibitem{lai2018modeling}
+\bibitem[Lai et~al.(2018)Lai, Chang, Yang, and Liu]{lai2018modeling}
 Guokun Lai, Wei-Cheng Chang, Yiming Yang, and Hanxiao Liu.
 \newblock Modeling long- and short-term temporal patterns with deep neural networks, 2018.
 
-\bibitem{loshchilov2019decoupled}
-Ilya Loshchilov and Frank Hutter.
-\newblock Decoupled weight decay regularization, 2019.
-
-\bibitem{oreshkin2020nbeats}
-Boris~N. Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
-\newblock N-beats: Neural basis expansion analysis for interpretable time series forecasting, 2020.
-
-\bibitem{puindi2020dynamic}
-AC~Puindi and ME~Silva.
-\newblock Dynamic structural models with covariates for short-term forecasting of time series with complex seasonal patterns.
-\newblock {\em J Appl Stat}, 48(5):804--826, 2020.
-
-\bibitem{salinas2019highdimensional}
+\bibitem[Salinas et~al.(2019{\natexlab{b}})Salinas, Bohlke-Schneider, Callot, Medico, and Gasthaus]{salinas2019highdimensional}
 David Salinas, Michael Bohlke-Schneider, Laurent Callot, Roberto Medico, and Jan Gasthaus.
-\newblock High-dimensional multivariate forecasting with low-rank gaussian copula processes, 2019.
+\newblock High-dimensional multivariate forecasting with low-rank gaussian copula processes, 2019{\natexlab{b}}.
 
-\bibitem{salinas2019deepar}
-David Salinas, Valentin Flunkert, and Jan Gasthaus.
-\newblock Deepar: Probabilistic forecasting with autoregressive recurrent networks, 2019.
+\bibitem[Kitaev et~al.(2020)Kitaev, Łukasz Kaiser, and Levskaya]{kitaev2020reformer}
+Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
+\newblock Reformer: The efficient transformer, 2020.
 
-\bibitem{smith2018superconvergence}
-Leslie~N. Smith and Nicholay Topin.
-\newblock Super-convergence: Very fast training of neural networks using large learning rates, 2018.
+\bibitem[Zhou et~al.(2021)Zhou, Zhang, Peng, Zhang, Li, Xiong, and Zhang]{zhou2021informer}
+Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang.
+\newblock Informer: Beyond efficient transformer for long sequence time-series forecasting, 2021.
 
-\bibitem{oord2016wavenet}
-Aaron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.
-\newblock Wavenet: A generative model for raw audio, 2016.
-
-\bibitem{vaswani2023attention}
-Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
-\newblock Attention is all you need, 2023.
-
-\bibitem{wang2006}
-Shuchun Wang.
-\newblock Exponential smoothing for forecasting and bayesian validation of computer models.
-\newblock 01 2006.
-
-\bibitem{wu2022autoformer}
+\bibitem[Wu et~al.(2022)Wu, Xu, Wang, and Long]{wu2022autoformer}
 Haixu Wu, Jiehui Xu, Jianmin Wang, and Mingsheng Long.
 \newblock Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting, 2022.
 
-\bibitem{zeng2022transformers}
+\bibitem[Zhang and Yan(2023)]{zhang2023crossformer}
+Yunhao Zhang and Junchi Yan.
+\newblock Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting.
+\newblock In \emph{The Eleventh International Conference on Learning Representations}, 2023.
+\newblock URL \url{https://openreview.net/forum?id=vSVLM2j9eie}.
+
+\bibitem[Zeng et~al.(2022)Zeng, Chen, Zhang, and Xu]{zeng2022transformers}
 Ailing Zeng, Muxi Chen, Lei Zhang, and Qiang Xu.
 \newblock Are transformers effective for time series forecasting?, 2022.
 
-\bibitem{zhang2023crossformer}
-Yunhao Zhang and Junchi Yan.
-\newblock Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting.
-\newblock In {\em The Eleventh International Conference on Learning Representations}, 2023.
+\bibitem[Chen et~al.(2023)Chen, Li, Yoder, Arik, and Pfister]{chen2023tsmixer}
+Si-An Chen, Chun-Liang Li, Nate Yoder, Sercan~O. Arik, and Tomas Pfister.
+\newblock Tsmixer: An all-mlp architecture for time series forecasting, 2023.
 
-\bibitem{zhou2021informer}
-Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang.
-\newblock Informer: Beyond efficient transformer for long sequence time-series forecasting, 2021.
+\bibitem[Godahewa et~al.(2021{\natexlab{b}})Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso]{godahewa_2021_4656014}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Hospital dataset, apr 2021{\natexlab{b}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.4656014}.
+
+\bibitem[Godahewa et~al.(2021{\natexlab{c}})Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso]{godahewa_2021_4656096}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Tourism monthly dataset, apr 2021{\natexlab{c}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.4656096}.
+
+\bibitem[Godahewa et~al.(2021{\natexlab{d}})Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso]{godahewa_2021_4656135}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Traffic weekly dataset, apr 2021{\natexlab{d}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.4656135}.
+
+\bibitem[Godahewa et~al.(2021{\natexlab{e}})Godahewa, Bergmeir, Webb, Hyndman, and Montero-Manso]{godahewa_2021_4656140}
+Rakshitha Godahewa, Christoph Bergmeir, Geoff Webb, Rob Hyndman, and Pablo Montero-Manso.
+\newblock Electricity hourly dataset, apr 2021{\natexlab{e}}.
+\newblock URL \url{https://doi.org/10.5281/zenodo.4656140}.
+
+\bibitem[Hyndman and Athanasopoulos(2021)]{hyndman2021forecasting}
+R.J. Hyndman and G.~Athanasopoulos.
+\newblock \emph{Forecasting: principles and practice}.
+\newblock OTexts, Melbourne, Australia, 3 edition, 2021.
+\newblock URL \url{https://OTexts.com/fpp3}.
+\newblock Accessed on 2024-03-21.
+
+\bibitem[Alexandrov et~al.(2019)Alexandrov, Benidis, Bohlke-Schneider, Flunkert, Gasthaus, Januschowski, Maddix, Rangapuram, Salinas, Schulz, Stella, Türkmen, and Wang]{gluonts_arxiv}
+A.~Alexandrov, K.~Benidis, M.~Bohlke-Schneider, V.~Flunkert, J.~Gasthaus, T.~Januschowski, D.~C. Maddix, S.~Rangapuram, D.~Salinas, J.~Schulz, L.~Stella, A.~C. Türkmen, and Y.~Wang.
+\newblock {GluonTS: Probabilistic Time Series Modeling in Python}.
+\newblock \emph{arXiv preprint arXiv:1906.05264}, 2019.
+
+\bibitem[Smith and Topin(2018)]{smith2018superconvergence}
+Leslie~N. Smith and Nicholay Topin.
+\newblock Super-convergence: Very fast training of neural networks using large learning rates, 2018.
+
+\bibitem[Oreshkin et~al.(2020)Oreshkin, Carpov, Chapados, and Bengio]{oreshkin2020nbeats}
+Boris~N. Oreshkin, Dmitri Carpov, Nicolas Chapados, and Yoshua Bengio.
+\newblock N-beats: Neural basis expansion analysis for interpretable time series forecasting, 2020.
+
+\bibitem[van~den Oord et~al.(2016)van~den Oord, Dieleman, Zen, Simonyan, Vinyals, Graves, Kalchbrenner, Senior, and Kavukcuoglu]{oord2016wavenet}
+Aaron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio, 2016.
+
+\bibitem[Vaswani et~al.(2023)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2023attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need, 2023.
 
 \end{thebibliography}
