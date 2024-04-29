@@ -40,10 +40,6 @@ Guokun Lai, Wei-Cheng Chang, Yiming Yang, and Hanxiao Liu.
 David Salinas, Michael Bohlke-Schneider, Laurent Callot, Roberto Medico, and Jan Gasthaus.
 \newblock High-dimensional multivariate forecasting with low-rank gaussian copula processes, 2019{\natexlab{b}}.
 
-\bibitem[Kitaev et~al.(2020)Kitaev, Łukasz Kaiser, and Levskaya]{kitaev2020reformer}
-Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
-\newblock Reformer: The efficient transformer, 2020.
-
 \bibitem[Zhou et~al.(2021)Zhou, Zhang, Peng, Zhang, Li, Xiong, and Zhang]{zhou2021informer}
 Haoyi Zhou, Shanghang Zhang, Jieqi Peng, Shuai Zhang, Jianxin Li, Hui Xiong, and Wancai Zhang.
 \newblock Informer: Beyond efficient transformer for long sequence time-series forecasting, 2021.
@@ -97,6 +93,10 @@ R.J. Hyndman and G.~Athanasopoulos.
 A.~Alexandrov, K.~Benidis, M.~Bohlke-Schneider, V.~Flunkert, J.~Gasthaus, T.~Januschowski, D.~C. Maddix, S.~Rangapuram, D.~Salinas, J.~Schulz, L.~Stella, A.~C. Türkmen, and Y.~Wang.
 \newblock {GluonTS: Probabilistic Time Series Modeling in Python}.
 \newblock \emph{arXiv preprint arXiv:1906.05264}, 2019.
+
+\bibitem[Kitaev et~al.(2020)Kitaev, Łukasz Kaiser, and Levskaya]{kitaev2020reformer}
+Nikita Kitaev, Łukasz Kaiser, and Anselm Levskaya.
+\newblock Reformer: The efficient transformer, 2020.
 
 \bibitem[Smith and Topin(2018)]{smith2018superconvergence}
 Leslie~N. Smith and Nicholay Topin.

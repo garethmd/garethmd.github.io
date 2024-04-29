@@ -137,10 +137,10 @@ dynamics between the target variables in each timeseries. As the dimension of th
 become very high dimensional, and encounter high computational costs as a result.  GPVAR addresses this by modifying the output model 
 with a low rank covariance structure. 
 
-More recently, transformer-based models such as Reformer, Informer, Autoformer, and CrossFormer
-\cite{kitaev2020reformer,zhou2021informer,wu2022autoformer, zhang2023crossformer} have emerged for multivariate predictions. Notably Informer used a 
+More recently, transformer-based models such as Informer, Autoformer, and Crossformer
+\cite{zhou2021informer,wu2022autoformer, zhang2023crossformer} have emerged for multivariate predictions. Notably Informer used a 
 Weather, WTH,  which could be configured to use in a covariate setting. These models extract feature maps from the temporal dimension and extend the 
-vanilla Transformer attention mechanism to produce more accurate predictions over longer forecast horizons in an autoregressive manner. 
+vanilla Transformer attention mechanism to produce more accurate predictions over longer forecast horizons. 
 A study by Zeng et al \cite{zeng2022transformers} found that the inclusion of covariates in transformer networks were largely ineffective, proposing instead 
 simple linear models with seasonal decomposition similar to traditional state space ETS models.
 
@@ -738,7 +738,6 @@ the network with information regarding the temporal influence of each leading in
     \end{itemize}
 
 \end{enumerate}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  28 APR 2024 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.15)  29 APR 2024 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -646,14 +646,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \vbox (badness 5475) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 196.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<figures/electricity-pcc.png, id=159, 1084.05pt x 361.35pt>
+<figures/electricity-pcc.png, id=157, 1084.05pt x 361.35pt>
 File: figures/electricity-pcc.png Graphic file (type png)
 <use figures/electricity-pcc.png>
 Package pdftex.def Info: figures/electricity-pcc.png  used on input line 206.
@@ -662,12 +662,12 @@ Package pdftex.def Info: figures/electricity-pcc.png  used on input line 206.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-<figures/base_k3_pe_pcc.png, id=226, 1445.4pt x 361.35pt>
+<figures/base_k3_pe_pcc.png, id=225, 1445.4pt x 361.35pt>
 File: figures/base_k3_pe_pcc.png Graphic file (type png)
 <use figures/base_k3_pe_pcc.png>
 Package pdftex.def Info: figures/base_k3_pe_pcc.png  used on input line 445.
 (pdftex.def)             Requested size: 357.73405pt x 89.43301pt.
-<figures/models_tour_k1.png, id=229, 1445.4pt x 361.35pt>
+<figures/models_tour_k1.png, id=228, 1445.4pt x 361.35pt>
 File: figures/models_tour_k1.png Graphic file (type png)
 <use figures/models_tour_k1.png>
 Package pdftex.def Info: figures/models_tour_k1.png  used on input line 460.
@@ -676,7 +676,7 @@ Package pdftex.def Info: figures/models_tour_k1.png  used on input line 460.
 Underfull \vbox (badness 7081) has occurred while \output is active []
 
  [7]
-<figures/models_traf_k.png, id=242, 1445.4pt x 361.35pt>
+<figures/models_traf_k.png, id=241, 1445.4pt x 361.35pt>
 File: figures/models_traf_k.png Graphic file (type png)
 <use figures/models_traf_k.png>
 Package pdftex.def Info: figures/models_traf_k.png  used on input line 471.
@@ -711,117 +711,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) in paragraph at lines 778--782
+Underfull \hbox (badness 10000) in paragraph at lines 777--781
 
  []
 
 [18] [19] [20]
-<figures/base_k1_pe_pcc.png, id=372, 1445.4pt x 361.35pt>
+<figures/base_k1_pe_pcc.png, id=371, 1445.4pt x 361.35pt>
 File: figures/base_k1_pe_pcc.png Graphic file (type png)
 <use figures/base_k1_pe_pcc.png>
-Package pdftex.def Info: figures/base_k1_pe_pcc.png  used on input line 1029.
+Package pdftex.def Info: figures/base_k1_pe_pcc.png  used on input line 1028.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/base_k2_pe_pcc.png, id=373, 1445.4pt x 361.35pt>
+<figures/base_k2_pe_pcc.png, id=372, 1445.4pt x 361.35pt>
 File: figures/base_k2_pe_pcc.png Graphic file (type png)
 <use figures/base_k2_pe_pcc.png>
-Package pdftex.def Info: figures/base_k2_pe_pcc.png  used on input line 1036.
+Package pdftex.def Info: figures/base_k2_pe_pcc.png  used on input line 1035.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/base_k3_pe_pcc.png Graphic file (type png)
 <use figures/base_k3_pe_pcc.png>
-Package pdftex.def Info: figures/base_k3_pe_pcc.png  used on input line 1043.
+Package pdftex.def Info: figures/base_k3_pe_pcc.png  used on input line 1042.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg_k1_pe_pcc.png, id=374, 1445.4pt x 361.35pt>
+<figures/seg_k1_pe_pcc.png, id=373, 1445.4pt x 361.35pt>
 File: figures/seg_k1_pe_pcc.png Graphic file (type png)
 <use figures/seg_k1_pe_pcc.png>
-Package pdftex.def Info: figures/seg_k1_pe_pcc.png  used on input line 1054.
+Package pdftex.def Info: figures/seg_k1_pe_pcc.png  used on input line 1053.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg_k2_pe_pcc.png, id=375, 1445.4pt x 361.35pt>
+<figures/seg_k2_pe_pcc.png, id=374, 1445.4pt x 361.35pt>
 File: figures/seg_k2_pe_pcc.png Graphic file (type png)
 <use figures/seg_k2_pe_pcc.png>
-Package pdftex.def Info: figures/seg_k2_pe_pcc.png  used on input line 1060.
+Package pdftex.def Info: figures/seg_k2_pe_pcc.png  used on input line 1059.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/seg_k3_pe_pcc.png, id=376, 1445.4pt x 361.35pt>
+<figures/seg_k3_pe_pcc.png, id=375, 1445.4pt x 361.35pt>
 File: figures/seg_k3_pe_pcc.png Graphic file (type png)
 <use figures/seg_k3_pe_pcc.png>
-Package pdftex.def Info: figures/seg_k3_pe_pcc.png  used on input line 1066.
+Package pdftex.def Info: figures/seg_k3_pe_pcc.png  used on input line 1065.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_hosp_k.png, id=377, 1445.4pt x 361.35pt>
+<figures/models_hosp_k.png, id=376, 1445.4pt x 361.35pt>
 File: figures/models_hosp_k.png Graphic file (type png)
 <use figures/models_hosp_k.png>
-Package pdftex.def Info: figures/models_hosp_k.png  used on input line 1077.
+Package pdftex.def Info: figures/models_hosp_k.png  used on input line 1076.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_tour_k.png, id=378, 1445.4pt x 361.35pt>
+<figures/models_tour_k.png, id=377, 1445.4pt x 361.35pt>
 File: figures/models_tour_k.png Graphic file (type png)
 <use figures/models_tour_k.png>
-Package pdftex.def Info: figures/models_tour_k.png  used on input line 1084.
+Package pdftex.def Info: figures/models_tour_k.png  used on input line 1083.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/models_traf_k.png Graphic file (type png)
 <use figures/models_traf_k.png>
-Package pdftex.def Info: figures/models_traf_k.png  used on input line 1091.
+Package pdftex.def Info: figures/models_traf_k.png  used on input line 1090.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_elec_k.png, id=379, 1445.4pt x 361.35pt>
+<figures/models_elec_k.png, id=378, 1445.4pt x 361.35pt>
 File: figures/models_elec_k.png Graphic file (type png)
 <use figures/models_elec_k.png>
-Package pdftex.def Info: figures/models_elec_k.png  used on input line 1098.
+Package pdftex.def Info: figures/models_elec_k.png  used on input line 1097.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_hosp_k1.png, id=380, 1445.4pt x 361.35pt>
+<figures/models_hosp_k1.png, id=379, 1445.4pt x 361.35pt>
 File: figures/models_hosp_k1.png Graphic file (type png)
 <use figures/models_hosp_k1.png>
-Package pdftex.def Info: figures/models_hosp_k1.png  used on input line 1110.
+Package pdftex.def Info: figures/models_hosp_k1.png  used on input line 1109.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_hosp_k2.png, id=381, 1445.4pt x 361.35pt>
+<figures/models_hosp_k2.png, id=380, 1445.4pt x 361.35pt>
 File: figures/models_hosp_k2.png Graphic file (type png)
 <use figures/models_hosp_k2.png>
-Package pdftex.def Info: figures/models_hosp_k2.png  used on input line 1117.
+Package pdftex.def Info: figures/models_hosp_k2.png  used on input line 1116.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_hosp_k3.png, id=382, 1445.4pt x 361.35pt>
+<figures/models_hosp_k3.png, id=381, 1445.4pt x 361.35pt>
 File: figures/models_hosp_k3.png Graphic file (type png)
 <use figures/models_hosp_k3.png>
-Package pdftex.def Info: figures/models_hosp_k3.png  used on input line 1124.
+Package pdftex.def Info: figures/models_hosp_k3.png  used on input line 1123.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
 File: figures/models_tour_k1.png Graphic file (type png)
 <use figures/models_tour_k1.png>
-Package pdftex.def Info: figures/models_tour_k1.png  used on input line 1136.
+Package pdftex.def Info: figures/models_tour_k1.png  used on input line 1135.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_tour_k2.png, id=383, 1445.4pt x 361.35pt>
+<figures/models_tour_k2.png, id=382, 1445.4pt x 361.35pt>
 File: figures/models_tour_k2.png Graphic file (type png)
 <use figures/models_tour_k2.png>
-Package pdftex.def Info: figures/models_tour_k2.png  used on input line 1143.
+Package pdftex.def Info: figures/models_tour_k2.png  used on input line 1142.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_tour_k3.png, id=384, 1445.4pt x 361.35pt>
+<figures/models_tour_k3.png, id=383, 1445.4pt x 361.35pt>
 File: figures/models_tour_k3.png Graphic file (type png)
 <use figures/models_tour_k3.png>
-Package pdftex.def Info: figures/models_tour_k3.png  used on input line 1150.
+Package pdftex.def Info: figures/models_tour_k3.png  used on input line 1149.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_traf_k1.png, id=385, 1445.4pt x 361.35pt>
+<figures/models_traf_k1.png, id=384, 1445.4pt x 361.35pt>
 File: figures/models_traf_k1.png Graphic file (type png)
 <use figures/models_traf_k1.png>
-Package pdftex.def Info: figures/models_traf_k1.png  used on input line 1161.
+Package pdftex.def Info: figures/models_traf_k1.png  used on input line 1160.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_traf_k2.png, id=386, 1445.4pt x 361.35pt>
+<figures/models_traf_k2.png, id=385, 1445.4pt x 361.35pt>
 File: figures/models_traf_k2.png Graphic file (type png)
 <use figures/models_traf_k2.png>
-Package pdftex.def Info: figures/models_traf_k2.png  used on input line 1168.
+Package pdftex.def Info: figures/models_traf_k2.png  used on input line 1167.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_traf_k3.png, id=387, 1445.4pt x 361.35pt>
+<figures/models_traf_k3.png, id=386, 1445.4pt x 361.35pt>
 File: figures/models_traf_k3.png Graphic file (type png)
 <use figures/models_traf_k3.png>
-Package pdftex.def Info: figures/models_traf_k3.png  used on input line 1175.
+Package pdftex.def Info: figures/models_traf_k3.png  used on input line 1174.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_elec_k1.png, id=388, 1445.4pt x 361.35pt>
+<figures/models_elec_k1.png, id=387, 1445.4pt x 361.35pt>
 File: figures/models_elec_k1.png Graphic file (type png)
 <use figures/models_elec_k1.png>
-Package pdftex.def Info: figures/models_elec_k1.png  used on input line 1187.
+Package pdftex.def Info: figures/models_elec_k1.png  used on input line 1186.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_elec_k2.png, id=389, 1445.4pt x 361.35pt>
+<figures/models_elec_k2.png, id=388, 1445.4pt x 361.35pt>
 File: figures/models_elec_k2.png Graphic file (type png)
 <use figures/models_elec_k2.png>
-Package pdftex.def Info: figures/models_elec_k2.png  used on input line 1194.
+Package pdftex.def Info: figures/models_elec_k2.png  used on input line 1193.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
-<figures/models_elec_k3.png, id=390, 1445.4pt x 361.35pt>
+<figures/models_elec_k3.png, id=389, 1445.4pt x 361.35pt>
 File: figures/models_elec_k3.png Graphic file (type png)
 <use figures/models_elec_k3.png>
-Package pdftex.def Info: figures/models_elec_k3.png  used on input line 1201.
+Package pdftex.def Info: figures/models_elec_k3.png  used on input line 1200.
 (pdftex.def)             Requested size: 397.48499pt x 99.36879pt.
  [21] [22 <./figures/base_k1_pe_pcc.png> <./figures/base_k2_pe_pcc.png>] [23 <./figures/seg_k1_pe_pcc.png> <./figures/seg_k2_pe_pcc.png> <./figures/seg_k3_pe_pcc.png>] [24 <./figures/models_hosp_k.png> <./figures/models_tour_k.png> <./figures/models_elec_k.png>] [25 <./figures/models_hosp_k1.png> <./figures/models_hosp_k2.png> <./figures/models_hosp_k3.png>] [26 <./figures/models_tour_k2.png> <./figures/models_tour_k3.png>] [27 <./figures/models_traf_k1.png> <./figures/models_traf_k2.png> <./figures/models_traf_k3.png>] [28 <./figures/models_elec_k1.png> <./figures/models_elec_k2.png> <./figures/models_elec_k3.png>] (./rnn-covariates.aux)
  ***********
@@ -840,10 +840,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,20n,99p,1082b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on rnn-covariates.pdf (28 pages, 2184287 bytes).
+Output written on rnn-covariates.pdf (28 pages, 2184219 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
+ 554 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
  129 named destinations out of 1000 (max. 500000)
  48972 words of extra memory for PDF output out of 51595 (max. 10000000)
 

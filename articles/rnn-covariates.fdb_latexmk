@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex rnn-covariates"] 1714333219.21194 "rnn-covariates.aux" "rnn-covariates.bbl" "rnn-covariates" 1714333222.25458 0
+["bibtex rnn-covariates"] 1714384452.33386 "rnn-covariates.aux" "rnn-covariates.bbl" "rnn-covariates" 1714384455.44765 0
   "./rnn-covariates.bib" 1714153967.53088 13125 7e1c6ca3bafdd8bb512619e5bd8db881 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "rnn-covariates.aux" 1714333221.96423 20153 071df4a38ca28745ae91a5d0cf15d4c8 "pdflatex"
+  "rnn-covariates.aux" 1714384455.18278 20134 9dd8218ec053d8674a5c89725c3c109e "pdflatex"
   (generated)
   "rnn-covariates.bbl"
   "rnn-covariates.blg"
   (rewritten before read)
-["pdflatex"] 1714333219.3632 "/Users/garethdavies/Development/workspaces/garethmd.github.io/articles/rnn-covariates.tex" "rnn-covariates.pdf" "rnn-covariates" 1714333222.25474 0
-  "/Users/garethdavies/Development/workspaces/garethmd.github.io/articles/rnn-covariates.tex" 1714333216.08338 80951 ecdbea7ea4de3b7371b7a0367dbd8c34 ""
+["pdflatex"] 1714384452.47963 "/Users/garethdavies/Development/workspaces/garethmd.github.io/articles/rnn-covariates.tex" "rnn-covariates.pdf" "rnn-covariates" 1714384455.4478 0
+  "/Users/garethdavies/Development/workspaces/garethmd.github.io/articles/rnn-covariates.tex" 1714384448.96648 80893 c0146b8ab49685590e749a9a2704d5c6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -173,10 +173,10 @@
   "figures/seg_k2_pe_pcc.png" 1713657587.85467 66488 2e1d7eb48198fe5925aadde0e36dbece ""
   "figures/seg_k3_pe_pcc.png" 1713657628.19951 70203 86f59d826b69ec10beb20f16e0842b69 ""
   "neurips_2024.sty" 1712161640.56736 11625 b5f853b54a7a098e9e5b837f826d5daa ""
-  "rnn-covariates.aux" 1714333221.96423 20153 071df4a38ca28745ae91a5d0cf15d4c8 "pdflatex"
-  "rnn-covariates.bbl" 1714333219.36037 7095 e79f8c14006bdbe308d1636eaa229c3f "bibtex rnn-covariates"
-  "rnn-covariates.out" 1714333221.96681 4472 eb186447869530bee5f03133036ba72e "pdflatex"
-  "rnn-covariates.tex" 1714333216.08338 80951 ecdbea7ea4de3b7371b7a0367dbd8c34 ""
+  "rnn-covariates.aux" 1714384455.18278 20134 9dd8218ec053d8674a5c89725c3c109e "pdflatex"
+  "rnn-covariates.bbl" 1714384452.47677 7095 ce98ac1bf5b343612224d08c33275002 "bibtex rnn-covariates"
+  "rnn-covariates.out" 1714384455.18402 4472 eb186447869530bee5f03133036ba72e "pdflatex"
+  "rnn-covariates.tex" 1714384448.96648 80893 c0146b8ab49685590e749a9a2704d5c6 ""
   (generated)
   "rnn-covariates.aux"
   "rnn-covariates.log"
