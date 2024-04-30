@@ -38,11 +38,11 @@ conditions that the original benchmarks were run on, including the lookback wind
 In fact I was a bit concerned about what conclusions we might draw from this model if it performed poorly, so I decided to create a second model, the seg-lstm model. This model is identical to the base-lstm model with one exception. The input data is segmented into seasonal segments. This allows us to accomodate far greater context lengths (lookback windows) and therefore we hope should be better at predicting long forecasting horizons. As it turns out, the seg-lstm model performed much better than I expected.
 
 ## 3. Experiment Setup
-For each dataset and model combination we're going to run 24 experiments with the following scenarios:
+For each dataset and model combination we're going to run 30 experiments with the following scenarios:
   1. 5 univariate scenarios with different seeds.
-  2. 6 scenarios with 1 covariate and different correlation (PCC) values
-  3. 6 scenarios with 2 covariates and different correlation (PCC) values
-  4. 6 scenarios with 3 covariates and different correlation (PCC) values
+  2. 8 scenarios with 1 covariate and different correlation (PCC) values
+  3. 8 scenarios with 2 covariates and different correlation (PCC) values
+  4. 8 scenarios with 3 covariates and different correlation (PCC) values
   5. 1 scenario with 2 covariates positioned at t=1 and t=3 with a PCC of 1.0
 
 The number of covariates will be denoted with the letter 'k'. The correlation levels will be controlled to a range between 0.5 (strong positive correlation) and 1.0 (perfect correlation), In other words where k=1 and PCC=1.0 we will provide the model with a leading indicator that is 
