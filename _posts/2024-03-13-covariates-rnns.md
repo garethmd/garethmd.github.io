@@ -9,7 +9,7 @@ image:
 ---
 ## 1. Introduction 
 This blog accompanies a paper I wrote on the effect of covariates on LSTM networks for timeseries forecasting, which you can find
-on  [arxiv](http://arxiv.org/abs/2404.18553).
+on  [arxiv](http://arxiv.org/abs/2404.18553).  
 
 In business, leading indicators serve as vital signposts, offering insights into what the future may hold based on present measurements. For instance, the number of opportunities in a sales pipeline today provides a glimpse into future business closures. Similarly, during the pandemic, infection rates from tests were used to forecast future hospitalization rates. In the field of time series forecasting, where I spend a lot of my time, the integration of these leading indicators into our forecasting models would seem like an obvious choice. Not only should it enhance the accuracy of our predictions, but it should also enhances interpretability, enabling us to discern the driving factors behind our forecasts. This, in turn, would empower us to simulate various scenarios and potentially take actions to alter the future.
 
