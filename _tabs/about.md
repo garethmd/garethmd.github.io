@@ -8,9 +8,11 @@ I'm Gareth Davies, a UK based, machine learning practitioner, SaaS architect and
 
 In 2017 I started getting involved in machine learning and in particular deep learning and have been hooked ever since. In my professional life I led the research and development of sensai, a multi-tenanted machine learning platform in the cloud which uses deep learning to solve tabular and time series problems. Much of my time is spent researching and developing new architectures and techniques to solve problems in this space and productizing them to be used by our customers. I have learnt that patience and attention to detail are key to making progress having made plenty of mistakes along the way. There is nothing more frustrating than spending days on an experiment only to discover that your data transformation dimension was incorrect or you had scaled your data incorrectly. However the satisfaction from watching a novel idea work, no matter how minor is extremely rewarding. Today sensai is used by some of the largest companies in the world in ways that I could never imagined and has been shown to outperform Salesforce Einstein.
 
-In 2024 I started neural aspect to help companies solve their machine learning problems and get the most out of their technology by taking a practical and pragmatic approach to create solutions that work. I generally recommend taking an iterative approach to research and development and focus on delivering value early and often, where possible leveraging existing solutions and services such as serverless. 
+In 2024 I started neural aspect to help companies solve their machine learning problems and get the most out of their technology by taking a practical and pragmatic approach to create solutions that work. My expertise lies in timeseries forecasting and tabular data problems. I can, for example help you to forecast your sales, predict churn or just better understand your data.
 
-If you have a machine learning problem that you need help with to help you build your next big thing then please get in touch.
+I generally recommend taking an iterative approach to research and development and focus on delivering value early and often, where possible leveraging existing solutions and services such as serverless. 
+
+I'm alawys open to having a chat, so if you think I can help then please get in touch.
 
 
 <!-- Calendly badge widget begin -->
