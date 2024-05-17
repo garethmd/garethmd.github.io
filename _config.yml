@@ -19,7 +19,7 @@ title: neural aspect # the main title
 tagline: applying research to reality # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Providing expert AI services for timeseries forecasting, Tabular data analysis using the latest machine learning techniques.
+  Providing expert AI services for timeseries forecasting, tabular data analysis using the latest machine learning techniques.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
