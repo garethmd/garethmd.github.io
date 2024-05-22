@@ -18,8 +18,7 @@ title: neural aspect # the main title
 
 tagline: applying research to reality # it will display as the sub-title
 
-description: >- # used by seo meta and the atom feed
-  Providing expert AI services for timeseries forecasting, tabular data analysis using the latest machine learning techniques.
+description: Provider of expert AI services for timeseries forecasting, tabular data analysis using the latest machine learning techniques.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -44,13 +43,13 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/gareth-davies-4523001
 
-google_site_verification: # fill in to your verification string
+google_site_verification: google2f79e9774fe1a55c.html
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-DHD9K3D32Y
 
 # Prefer color scheme setting.
 #
