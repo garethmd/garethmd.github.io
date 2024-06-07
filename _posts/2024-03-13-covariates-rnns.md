@@ -1,11 +1,13 @@
 ---
 title: "Is it worth predicting covariates in an LSTM for timeseries forecasting?"
+description: "Evaluating the effectiveness of predicting covariates in LSTM Networks for Time Series Forecasting"
+author: garethmd
 date: 2024-04-29
 categories: [time-series, rnn, auto-regressive]
 tags: [time-series, seq2seq, rnn, lstm, auto-regressive]
 image:
   path: /assets/img/rnn-covariates/banner.jpg
-  alt: being directed by a compass
+  alt: rnn covariates
 ---
 ## 1. Introduction 
 This blog accompanies a paper I wrote on the effect of covariates on LSTM networks for timeseries forecasting, which you can find

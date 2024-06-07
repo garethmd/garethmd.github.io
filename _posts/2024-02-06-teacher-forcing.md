@@ -1,11 +1,13 @@
 ---
 title: "A look at Teacher Forcing and it's alternatives"
+description: "A review of teacher forcing, free running, scheduled-sampling, professor forcing and attention forcing for training auto-regresssive neural network models"
+author: garethmd
 date: 2024-02-06
 categories: [auto-regressive]
 tags: [seq2seq, teacher-forcing, rnn, lstm, gru, auto-regressive, generative]
 image:
   path: /assets/img/teacher-forcing/banner.jpg
-  alt: image alternative text
+  alt: teacher forcing
 ---
 ## 1. Introduction  
 In sequence modelling we often use a model that is auto-regressive. That is to say that the output of one time step serves as the input into the next time step. This concept us used in many generative models regardless of their architecture. In theory the output of the model is infinite and so we can keep feeding the output back into the model to generate as much as we like. 
