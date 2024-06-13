@@ -1,6 +1,6 @@
 ---
 title: "A discussion about the history of AI"
-description: "A discussion with Joshua Harris (Cloudapps) about the history of AI"
+description: "From the Cloudapps Winning with AI podcast on YouTube: A discussion with Joshua Harris about the history of AI"
 author: garethmd
 date: 2023-11-03
 categories: [podcast]

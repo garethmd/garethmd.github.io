@@ -1,6 +1,6 @@
 ---
 title: "A discussion about the future of AI in 2024"
-description: "A discussion with Joshua Harris (Cloudapps) about the future of AI in 2024"
+description: "From the Cloudapps Winning with AI podcast on YouTube: A discussion with Joshua Harris about the future of AI in 2024"
 author: garethmd
 date: 2023-12-07
 categories: [podcast]

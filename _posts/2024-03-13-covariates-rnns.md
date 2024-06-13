@@ -1,6 +1,6 @@
 ---
 title: "Is it worth predicting covariates in an LSTM for timeseries forecasting?"
-description: "Evaluating the effectiveness of predicting covariates in LSTM Networks for Time Series Forecasting"
+description: "A study which evaluates the effectiveness of predicting covariates in LSTM Neural Networks for Time Series Forecasting"
 author: garethmd
 date: 2024-04-29
 categories: [time-series, rnn, auto-regressive]

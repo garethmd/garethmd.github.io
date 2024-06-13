@@ -1,6 +1,6 @@
 ---
 title: "A look at Teacher Forcing and it's alternatives"
-description: "A review of teacher forcing, free running, scheduled-sampling, professor forcing and attention forcing for training auto-regresssive neural network models"
+description: "Review of teacher forcing, free running, scheduled-sampling, professor forcing and attention forcing for training auto-regresssive neural networks"
 author: garethmd
 date: 2024-02-06
 categories: [auto-regressive]
