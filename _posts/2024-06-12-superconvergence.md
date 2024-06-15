@@ -26,9 +26,9 @@ Nowadays the trend seems to be using ReduceLRonPlateau which reduces the learnin
 
 
 ## 2. Super-Convergence
-There is, however, another way that I discovered some years ago watching one of Jeremy Howard's excellent series of videos on [Practical Deep Learning for Coders](https://www.youtube.com/@howardjeremyp/playlists){:target="_blank"}. A way that was proposed by a researcher from the US Navy called Leslie N. Smith in his 2018 paper [Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates](https://arxiv.org/pdf/1708.07120){:target="_blank"}.
+There is, however, another way that I discovered some years ago watching one of Jeremy Howard's excellent series of videos on [Practical Deep Learning for Coders](https://www.youtube.com/@howardjeremyp/playlists){:target="_blank"}. A way that was proposed by Leslie N. Smith and Nicholay Topin in their 2018 paper [Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates](https://arxiv.org/pdf/1708.07120){:target="_blank"}.
 
-In my view Leslie is a great engineer and experimentalist and doesn't get the recognition that he deserves. He gave a great talk at [ML Conf Competition Winning Learning Rates](https://www.youtube.com/watch?v=bR7z2MA0p-o&ab_channel=MLconf){:target="_blank"} where he talks about the work in the paper which I highly recommend, but I'll give you a brief summary of his talk and his paper here. 
+Leslie, a researcher with the US Navy, is in my view a great engineer and experimentalist and doesn't get the recognition that he deserves. He gave a great talk at [ML Conf Competition Winning Learning Rates](https://www.youtube.com/watch?v=bR7z2MA0p-o&ab_channel=MLconf){:target="_blank"} where he talks about the work in the paper which I highly recommend, but I'll give you a brief summary of his talk and his paper here. 
 
 So the story goes that Leslie was interested in the effect of learning rate on the training performance and was experimenting with different techniques to find the best learning rate. At the time the standard way of doing this was by running a series of experiments with something like a Grid search and choosing the rate that gave the best results. He found that if he used a cyclical learning rate (CLR), shown in the far right plot on *figure 1*, then he would get the same performance as if he had just used the optimal learning rate. The CLR is a system which varies the learning rate between two bounds during training and he would aim to set the range so that the optimal learning rate was somewhere close to but below the upper bound.
 
@@ -58,7 +58,7 @@ Leslie makes an interesting observation about changes to other hyperparameters t
 forms of regularisation such as weight decay, dropout and batch size.
 
 That covers the main points of the paper with the exception of a section regarding an approach for estimating the optimal learning rate which he uses
-to demonstrate that large learning rates are effective at finding good minimums in flat loss landscapes. This section is a bit mathy math and it's really not essential to the main points of the paper so I'll leave to for you to read if you're interested. Overall, it's a great paper and if you've never read a research paper before then I would highly recommend it as it's very accessible and well written.
+to demonstrate that large learning rates are effective at finding good minimums in flat loss landscapes. This section is a bit mathy math and it's really not essential to the main points of the paper so I'll leave to you to read if you're interested. Overall, it's a great paper and if you've never read a research paper before then I would highly recommend it as it's very accessible and well written.
 
 
 ## 3. How I use it
