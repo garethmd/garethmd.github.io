@@ -15,7 +15,7 @@ you how to obtain state of the art performance using my simplified version of th
 
 
 ## 2. Recovering lost performance
-In the experiments that I ran for the [DeepAR](/posts/deepar) article, I created a version of DeepAR on my [nnts](https://github.com/garethmd/nnts/blob/main/projects/deepar/readme.md){:target="_blank"} repo. Now because I'm lazy and it was easier to implement, this version made point predictions, had some small differences in features and a simpler data sampling strategy. While it identified lag features as the biggest contributors to performance, it didn’t quite achieve the same results as the GluonTS DeepAR model, and this bothered me. So being a sucker for punishment I set about identifying where this last bit of performance could be coming from and after a long process of elimination I eventually came to the somewhat depressing conclusion that the biggest contributing factor was most likely the probabilistic head. Once I accepted that, I created a version of DeepAR with the same outputs as the GluonTS version that generates the parameters of a StudentT distribution. Now if I include the additional features that were previously omitted, and use a simililar data sampling strategy which iteratively samples a window from each time series in the dataset we get the following results:
+In the experiments that I ran for the [DeepAR](/posts/deepar) article, I created a version of DeepAR on my [nnts](https://github.com/garethmd/nnts/blob/main/projects/deepar/readme.md){:target="_blank"} repo. Now because I'm lazy and it was easier to implement, this version made point predictions, had some small differences in features and a simpler data sampling strategy. While it identified lag features as the biggest contributors to performance, it didn’t quite achieve the same results as the GluonTS DeepAR model, and this bothered me. So being a sucker for punishment I set about identifying where this last bit of performance could be coming from and after a long process of elimination I eventually came to the somewhat depressing conclusion that the biggest contributing factor was most likely the probabilistic head. Once I accepted that, I created a version of DeepAR with the same outputs as the GluonTS version that generates the parameters of a StudentT distribution. Now if I include the additional features that were previously omitted, and use a similar data sampling strategy which iteratively samples a window from each time series in the dataset we get the following results:
 
 ![DeepAR variant comparison](/assets/img/onecycle-deepar/deepar-compare.png){: width="600" }
 *Figure 1. Comparison of MASE metrics for various DeepAR models*
@@ -40,7 +40,7 @@ I tried various ideas: using a cyclical sine function to represent months, using
 
 
 ## 4. 1Cycle to the rescue
-So by now, I was starting to believe that maybe it's not possible to improve performance, but I had a couple more idea that I thought would be worth trying. One thing that I found which did make a difference was to tweak to the scaling function that we discussed in the [DeepAR](/posts/deepar) post.
+So by now, I was starting to believe that maybe it's not possible to improve performance, but I had a couple more ideas that I thought would be worth trying. One thing that I found which did make a difference was to tweak the scaling function that we discussed in the [DeepAR](/posts/deepar) post.
 I concluded the original mean absolute scaling function would not handle zero values well, because the scale would be close to zero and so the forecasted results would also be close to zero when we unscale them. 
 
 If you've read my previous post on [super-convergence](/posts/superconvergence) you will know that I am a big fan of 1Cycle scheduling and find that I get better generalisation with test set performance and more consistent results with less variation with different seeds. So I thought it would be worth trying here. I set the maximum learning rate to be 3x my original learning rate and ran the experiments with everything else the same. So I was very interested to see the results:
@@ -59,11 +59,11 @@ If you've read my previous post on [super-convergence](/posts/superconvergence) 
 
 
 ![Tourism](/assets/img/onecycle-deepar/betterdeepar-traffic-mae.png){: width="400" }
-*Figure 5. 1Cycle performance with our model on the Monash Traffic hourly dataset. Forecast Horizon = 168 steps [wandb](https://wandb.ai/garethmd/better-deepar-studentt-traffic-scheduler){:target="_blank"}*
+*Figure 5. 1Cycle performance with our model on the Monash Traffic hourly dataset. Forecast Horizon = 168 steps [wandb](https://wandb.ai/garethmd/better-deepar-studentt-traffic_hourly-scheduler){:target="_blank"}*
 
 
 So, here we are looking at the Mean Absolute Error (MAE) for each of the datasets trained with the modified model which contains only lag features
-and uses a slightly modified scaling functiion. The results are with my usual 5 runs with different seeds and I am showing both the mean and the error bars are the std error to show the level of variation between the 5 runs. With the excpetion of Traffic where performance with 1Cycle is marginally inferior to the ReduceLROnPlateau we see an improvement when using 1Cycle. Not only do we see the obvious reduction in MAE when using 1Cycle, but we also see a reduction in the variation between the 5 runs. In other words we are getting more consistent results using 1Cycle. All the results are available on the fantastic [wandb](https://wandb.ai/){:target="_blank"} platform.
+and uses a slightly modified scaling function. The results are with my usual 5 runs with different seeds and I am showing both the mean and the error bars are the std error to show the level of variation between the 5 runs. With the exception of Traffic where performance with 1Cycle is marginally inferior to the ReduceLROnPlateau we see an improvement when using 1Cycle. Not only do we see the obvious reduction in MAE when using 1Cycle, but we also see a reduction in the variation between the 5 runs. In other words we are getting more consistent results using 1Cycle. All the results are available on the fantastic [wandb](https://wandb.ai/){:target="_blank"} platform.
 
 
 | Dataset     | Modified DeepAR ReduceLROnPlateau (ours) | Modified DeepAR 1Cycle (ours) | Monash Ranking |
