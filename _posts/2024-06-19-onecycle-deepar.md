@@ -2,12 +2,12 @@
 title: "State of the art timeseries forecasting with 1Cycle scheduling"
 description: "How to get state of the art performance using my variant of DeepAR and 1Cycle Scheduling"
 author: garethmd
-date: 2024-06-12
+date: 2024-06-21
 categories: [time-series, how-to]
 tags: [time-series, rnn, super-convergence, scheduling, deepar]
 image:
   path: /assets/img/onecycle-deepar/banner.jpg
-  alt: superman does superconvergence
+  alt: footballer wins the cup with DeepAR and 1Cycle scheduling
 ---
 ## 1. Introduction 
 In this, a follow up to my two previous posts [DeepAR](/posts/deepar) and [superconvergence](/posts/superconvergence), I will show 
