@@ -81,7 +81,7 @@ What's more is that these results start to get quite interesting when we compare
 ## 5. Conclusion    
 So here are come closing thoughts that I have taken from this exercise:
 
-1. 1Cycle scheduling is likely to give a more consistent result that is closer to the optimum than the default ReduceLROnPlateau scheduler.
+1. 1Cycle scheduling can give a more consistent result that is closer to the optimum than the default ReduceLROnPlateau scheduler.
 2. Using covariate features that are not lag variables is not necessary to get good performance.
 3. Using a probabilistic (distribution) appears to trump using a point prediction model.
 4. Local scaling matters and the scaling function should be considered carefully for the data that you are working with.
