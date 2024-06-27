@@ -3,7 +3,7 @@ title: "State of the art timeseries forecasting with 1Cycle scheduling"
 description: "How to get state of the art timeseries forecasting results using machine learning with my variant of DeepAR and 1Cycle Scheduling"
 author: garethmd
 date: 2024-06-21
-categories: [time-series, how-to]
+categories: [research]
 tags: [time-series, rnn, super-convergence, scheduling, deepar]
 image:
   path: /assets/img/onecycle-deepar/banner.jpg

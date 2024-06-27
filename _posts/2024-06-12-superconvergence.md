@@ -3,7 +3,7 @@ title: "Supercharge your Neural Networks with Super-convergence"
 description: "A look at 1Cycle scheduling, one of my favourite techniques at improving model performance and practical guidance on how to use it"
 author: garethmd
 date: 2024-06-12
-categories: [neural-networks, training]
+categories: [reviews]
 tags: [neural-networks, training, super-convergence, scheduling, learning-rate]
 image:
   path: /assets/img/superconvergence/banner.jpg

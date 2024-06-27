@@ -3,7 +3,7 @@ title: "Should we predict covariates in an LSTM for timeseries forecasting?"
 description: "A study which evaluates the effectiveness of predicting covariates in LSTM Neural Networks for Time Series Forecasting"
 author: garethmd
 date: 2024-04-29
-categories: [time-series, rnn, auto-regressive]
+categories: [research]
 tags: [time-series, seq2seq, rnn, lstm, auto-regressive]
 image:
   path: /assets/img/rnn-covariates/banner.jpg
