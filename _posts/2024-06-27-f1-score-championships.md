@@ -3,7 +3,7 @@ title: "The F1 Score Time Series Model Championships"
 description: "A ranking system of time series models based on the Monash dataset benchmarks using the mase metric and the formula 1 scoring system."
 author: garethmd
 date: 2024-07-04
-categories: [opinions]
+categories: [benchmarking]
 tags: [ai, beginner, time-series, ranking, f1-score, monash]
 image:
   path: /assets/img/f1-score-championships/leaderboard.png
