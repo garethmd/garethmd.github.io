@@ -1,5 +1,5 @@
 ---
-title: "LTSF-Linear: Embarassingly simple time series forecasting models"
+title: "LTSF-Linear: Embarrassingly simple time series forecasting models"
 description: "A review of the 2022 Paper Are Transformers Effective for Time Series Forecasting that introduced DLinear and NLinear models"
 author: garethmd
 date: 2024-09-13
@@ -118,5 +118,5 @@ So now let's turn our attention to how well each configuration performs in terms
 
 
 # Conclusion
-So there we have it a look at the Linear LTSF models and how they perform in different configurations. My take away from this given the additional awkwardness and limitations of multivariate models is that really the best approach? The evidence here suggests that with these models at least the answer is probably not. I would prefer to use a global model 
+So there we have it a look at the LTSF Linear models and how they perform in different configurations. My take away from this given the additional awkwardness and limitations of multivariate models is that really the best approach? The evidence here suggests that with these models at least the answer is probably not. I would prefer to use a global model 
 that I know will scale and can be used on any dataset not just those that are suitable for multivariate forecasting.
