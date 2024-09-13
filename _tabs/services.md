@@ -3,8 +3,8 @@
 icon: fas fa-info-circle
 order: 1
 ---
-
-At **Neural Aspect Ltd**, I personally work with you to bring the power of AI and machine learning to your business. With over 25 years of experience in designing, building, and scaling machine learning solutions, I’m here to help you solve complex problems, optimize decision-making, and unlock the full potential of your data.
+ 
+At **Neural Aspect Ltd**, I personally work with you to bring the power of AI and machine learning to your business. With over 25 years of experience, I have designed, built, and supported large-scale web-based applications across various roles and organisations. I’m here to help you solve complex problems, optimize decision-making, and unlock the full potential of your data.
 
 ### Specialised Time Series Solutions
 I offer cutting-edge forecasting solutions tailored to your unique needs. From building custom models to developing benchmarking frameworks, I help you extract actionable insights and make reliable predictions from time series data. Whether you're in finance, retail, or any other industry with temporal data, I’ll work directly with your team to ensure you have the tools to succeed.
