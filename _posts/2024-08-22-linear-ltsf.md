@@ -4,7 +4,7 @@ description: "A review of the 2022 Paper Are Transformers Effective for Time Ser
 author: garethmd
 date: 2024-09-13
 categories: [reviews]
-tags: [pytorch, time-series, forecasting]
+tags: [dms, linear, time-series, forecasting]
 image:
   path: /assets/img/linear-ltsf/banner.jpg
   alt: Linear models go head to head with transformers like David vs Goliath

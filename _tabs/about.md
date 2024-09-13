@@ -1,60 +1,28 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 6
 ---
 
-![Desktop View](/assets/img/gd.png){: .right  width="140" height="80" }
+![Desktop View](/assets/img/gd-small-bw.jpeg){: .right  width="140" height="80" }
 
-Whether you're struggling to understand if you should be using AI in your business or whether you need practical hands on 
-help to deliver an AI project, I'm here to help. 
+## Navigating AI Solutions for Your Business
 
-I'm Gareth Davies and I love creating things with technology and have a particular interest in machine learning having spent
-more than 25 years designing, building and supporting large-scale web based applications in a variety of roles and organisations. 
-I am CTO at Cloudapps, a company that sells an AI driven Revenue Intelligence SaaS platform to enterprise customers.
-Bringing high quality competitive capabilities to market in short time frames is critical to our success 
-and when resources and budgets are tight, as they often are, it's vital that I can be as hands on as much as possible, so in addition to fulfilling the usual 
-CTO responsibilities I'm also the company's data scientist and conduct all our AI research and development.
+Whether you’re exploring how AI can benefit your business or need hands-on support to deliver an AI-driven project, I’m here to help.
 
-In 2017 I was tasked with evaluating how Cloudapps could use AI to improve its product offering by introducing valuable Insights to Sales 
-Reps and using our software to guide the selling process. Our Salesforce app collected huge amounts of activity data and we were confident that we could generate more value
-out of it having developed our own rules based algorithms to produce opportunity scores some years earlier. AI and machine learning were 
-familiar terms, but surprisingly little information existed on how to use it to make a production ready application. I set about the challenge of learning how to do this and entered an unfamiliar but fascinating world inhabited by strange words and 
-mathematical disciplines that I hadn't touched since university. Knowing what resources I could trust
-was initially my biggest problem, honestly even in those days there was so much "snake oil" out there it was difficult to separate fact from fiction. 
-Eventually and more by luck than judgement I got on the right track and started using material from people who I know now 
-are some of the great pioneers in the field. Evenings and weekends were spent taking courses, studying youtube university lectures and 
-experimenting with my own data and as I got more proficient my eyes were opened to the possibilities of what machine learning could and could not do.
+I’m Gareth Davies, Founder of Neural Aspect Ltd and CTO at Cloudapps. With over 25 years of experience in building large-scale, web-based applications, I’ve developed a fascination for machine learning and AI. As CTO at Cloudapps, I lead the development of our AI-driven Revenue Intelligence SaaS platform, where I focus on bringing innovative, high-quality AI capabilities to market, often within tight budgets and timelines. In addition to my CTO responsibilities, I’m the lead data scientist at Cloudapps, responsible for all AI research and development.
 
-In particular I was drawn to neural networks, universal function approximators that can mould themselves to any problem from computer vision to
-natural language processing. I read about how a neural network was used to forecast taxi journeys in Portugal and predict grocery sales from stores 
-in Germany and convinced myself that we could use it for our needs. It was pretty unconventional at the time, but we took a punt that this was 
-the future of AI and set about developing a deep learning based platform which specialised in making predictions from tabular 
-data to deliver the Sales Insights and the Guided Selling that we wanted. While the effort was not insignificant in a few months myself and two 
-other engineers had built a general purpose multi-tenanted machine learning platform that could make predictions using the latest deep learning 
-techniques with our own custom models. The serverless technologies we chose meant that it cost a few hundred dollars a month to run and would 
-scale as we onboarded customers. 
+In 2017, I was tasked with evaluating how AI could enhance Cloudapps’ product offerings, guiding sales reps with actionable insights. With the wealth of activity data we collected from Salesforce, we were confident that AI could unlock more value beyond our earlier rules-based algorithms. Despite the abundance of AI buzz, there was a surprising lack of guidance on how to make AI production-ready. I delved deep into learning machine learning, entering a world of complex mathematical concepts and technical terms.
 
-That was a few years ago now and we've learnt a lot since then about how to make neural networks perform really well to solve a wide range of business problems. 
-Our models have been shown to produce more accurate predictions that Salesforce Einstein in scoring opportunities and we have customers 
-who are using the platform to solve problems that we could never have envisioned. As our knowledge and understanding of the field increased we 
-added capabilities that explained predictions and supported new use cases such as sales forecasting using specialist time series techniques, we've also recognised that for certain classes of problems other machine learning or statistical approaches can create better solutions.
+My focus soon gravitated towards neural networks—their versatility and power as function approximators were captivating. After studying how these models were used for diverse applications, from forecasting taxi journeys to predicting grocery sales, I was convinced we could apply them to sales insights. In a matter of months, my team and I developed a multi-tenant machine learning platform using state-of-the-art deep learning techniques. The result? A scalable, cost-effective platform that has outperformed Salesforce Einstein in opportunity scoring and delivered transformative insights for clients.
 
-Since the rise of ChatGPT and other LLM's the hype surrounding AI has exploded, which is exciting but creates some challenges. It's 
-happened so quickly that there's a real lack of knowledge when it comes to implementing solutions that use AI. It's all very well 
-having blue sky thinking with art of what's possible, but unless you know how to go about actually creating a solution then your
-program will hit the buffers before it even starts. Secondly, there's so much information available now from so many sources, but
- not all of it is accurate or helpful. Finding reliable accurate information can feel like searching for the holy grail in a minefield. 
-As powerful as it is AI is not a silver bullet and shouldn't be default option that we reach for to solve every business problem, 
-knowing when and how to use machine learning is half the battle. 
+Today, our models continue to evolve, handling tasks like sales forecasting and opportunity scoring with unmatched accuracy. While neural networks have been central to our approach, I’ve also learned when to leverage other machine learning techniques or statistical models for specific business problems.
 
-I've been in your position and know how hard it is to get started, but I've picked up a thing or two 
-over the years and I created Neural Aspect so that I can share my skills and experience to help take some 
-of the hard work out of evaluating or running a program that uses AI. That could be to advise you on whether to solve a particular problem 
-with AI, conducting research or analysis with your data, creating POC's, assisting the development of MVP's or providing technical leadership to your development teams.  
+With the recent rise of AI and tools like ChatGPT, there’s more hype than ever—and more challenges. Implementing AI solutions requires more than visionary thinking; it demands practical execution. And while there’s no shortage of information, finding reliable, actionable advice is still a challenge. AI isn’t a magic bullet, and success lies in knowing when and how to apply it.
 
-I'm always happy to have a discussion about your specific situation and requirements so if you think I can 
-help then please do get in touch.
+Having been in your shoes, I know how daunting it can be to get started with AI. That’s why I created Neural Aspect: to help businesses like yours navigate the complexities of AI. Whether you need guidance on solving a problem with AI, research and analysis, help developing a proof of concept or MVP, or technical leadership for your team, Neural Aspect can help.
+
+If you’re looking for practical, hands-on AI expertise to drive your business forward, I’d love to discuss how I can support your goals. Please feel free to reach out.
 
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
