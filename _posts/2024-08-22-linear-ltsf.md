@@ -74,15 +74,17 @@ comparable to global models. Oh and by the way the authors are not the only offe
 # Global, Local, Independent and Multivariate experiments
 So you maybe asking yourself why does any of this matter? Who cares if this is a local or a global model. Well it matters because when we use these models as benchmarks we need to ensure that we are comparing like for like. So in order to do this I have run the DLinear and NLinear models in the following configurations:
 
-Local - One model for each time series  
-Independent - One model but with no shared weights  
-Multivariate - One model for all time series forecasting all time series simultaneously  
-Global - One model for all time series forecasting each time series independently (To achieve this the models were set to have one channel and then trained using a univariate data sampling strategy)
+- Local - One model for each time series  
+- Independent - One model but with no shared weights  
+- Multivariate - One model for all time series forecasting all time series simultaneously  
+- Global - One model for all time series forecasting each time series independently (To achieve this the models were set to have one channel and then trained using a univariate data sampling strategy)
 
 The datasets that we'll be using are from the Monash datasets which I've used in previous posts are and are a collection of 40 univariate and multivariate time series datasets. The forecast horizons are diverse and come from different domains. For brevity I'll just present the results from 6 datasets.
 
 
 ## Computational Efficiency
+The first thing we'll look at is the computational efficiency of the models. *Table 1* below shows the total training time in seconds for 100 epochs for each configuration on the 6 datasets.
+
 
 | Model               | Local     | Independent | Multivariate | Global  |
 |---------------------|-----------|-------------|--------------|---------|
@@ -93,7 +95,7 @@ The datasets that we'll be using are from the Monash datasets which I've used in
 | Traffic Hourly      | 7098.796  | 13801.659   | 462.455      | **12.987**  |
 | Traffic Weekly      | 214.614   | 29.594      | **5.048**        | 9.484   |
 
-*DLinear model total train time in seconds for 100 epochs. Shortest training times are shown in **bold***
+*Table 1 DLinear model total train time in seconds for 100 epochs. Shortest training times are shown in **bold***
 
 As we can see the global and multivariate configurations train far more quickly than our local configuration or the channel independent setting. In the extreme case the Traffic Hourly dataset takes 3 hours 10 minutes to train with channel independence, but just 12 seconds in the global configuration. 
 
@@ -105,7 +107,7 @@ So now let's turn our attention to how well each configuration performs in terms
 
 | Model             | Local  | Independent | Multivariate | Global |
 |-------------------|--------|-------------|--------------|--------|
-| Car parts         | 1.271  | 1.403       | <u>0.752<u>        | **0.747**  |
+| Car parts         | 1.271  | 1.403       | <u>0.752<u>        | **0.747**  | 
 | Covid deaths      | 9.354  | 9.200       | **5.601**        | <u>5.974<u>  |
 | Electricity hourly| <u>1.881<u>  | 1.883       | **1.880**        | 2.012  |
 | Electricity weekly| 1.049  | 1.096       | **0.780**        | <u>0.827<u>  |
@@ -117,6 +119,22 @@ So now let's turn our attention to how well each configuration performs in terms
  Unsurprisingly the Local and Independent results do appear to be closely related, however there also seems to be an association between the Multivariate and the Global results. For example the two best performing configurations for Car parts are Multivariate and Global both with a MASE of ~0.75 and Local and Independent have similar errors of ~1.3 and ~1.4 respectively. NLinear has the same pattern of behaviour. Clearly the characteristics of certain datasets tend to benefit from sharing information between time-series. These results seem to suggest some evidence that for these Linear models information can be shared using univariate or multivariate methods to a similar effect.  Given the limitations of multivariate models it would be interesting to see if this observation holds for other multivariate models.
 
 
+# Performance to other models
+As a final comparison I have also included in *table 3* the multivariate results of DLinear with the best performing model from the [Monash benchmarks](https://forecastingdata.org/)
+
+| Model             | DLinear Multivariate | Monash Best |
+|-------------------|--------|-------------|
+| Car parts         | 0.752        | **0.746** (Transformer) | 
+| Covid deaths      | 5.601        | **5.326** (ETS)  |
+| Electricity hourly| 1.880        | **1.606** (Wavenet)  |
+| Electricity weekly| 0.780        | **0.769** (FFNN)  |
+| Traffic hourly    | 0.923        | **0.821** (Transformer)  |
+| Traffic weekly    | 1.096        | **1.084** (Prophet)  |
+
+*Table 3 DLinear MASE compared to best performing model from the Monash benchmarks. The best error is shown in **bold***
+
+So what's the phrase? Close but no cigar. The DLinear model is competitive with the best models in the Monash benchmarks, but it's not quite there, and considering that Electricity Hourly and Traffic Hourly have comparatively long forecast horizons that's perhaps a tad disappointing as one would expect the linear models to perform better on these datasets. 
+
+
 # Conclusion
-So there we have it a look at the LTSF Linear models and how they perform in different configurations. My take away from this given the additional awkwardness and limitations of multivariate models is that really the best approach? The evidence here suggests that with these models at least the answer is probably not. I would prefer to use a global model 
-that I know will scale and can be used on any dataset not just those that are suitable for multivariate forecasting.
+So there we have it a look at the LTSF Linear models and how they perform in different configurations. Now these mulivariate models may outperform everything else once you start using forecast horizons in excees of 336 time steps, but for anything shorter than that it seems like univariate models still have the edge. For me the key question is given the additional awkwardness and limitations of multivariate models is that really the best approach? The evidence here suggests that with these models at least the answer is probably not. I would prefer to use a global model that I know will scale and can be used on any dataset not just those that are suitable for multivariate forecasting.
