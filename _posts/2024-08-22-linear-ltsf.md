@@ -22,7 +22,7 @@ some ordering information will be lost. They claim that this is not such a big p
 
 So what the authors are referring to is the fact that a transformer architecture does not intrinsically understand the temporal relationships between the data points in a time series. This is because the transformer architecture is designed to learn the relationships between the tokens in a set and not the relationships between the positions of the tokens. This is why we need to add positional encoding to the input data to give the model some idea of the order of the tokens.
 
-Instictively this point of view makes sense to me, but I would maybe go further. I think transformers are really well suited to learning abstract concepts, such as language and vision and that is whey excel in those fields. However, in time-series and tabular data the statistical properties that we need to make predictions or forecasts are in plain sight. 
+Instictively this point of view makes sense to me, but I would maybe go further. I think transformers are really well suited to learning abstract concepts, such as language and vision and that is why excel in those fields. However, in time-series and tabular data the statistical properties that we need to make predictions or forecasts are in plain sight. 
 
 It's worth bearing in mind that when this paper was written the time-series Transformers were dominated by the "formers" family, like Informer and Autoformer, which were designed to address long forecast horizons on multivariate time series. Consequently the authors focus on comparing their models primarily in this domain although they do present some univariate results which we'll come to later.
 
