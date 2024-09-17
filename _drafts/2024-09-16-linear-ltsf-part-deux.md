@@ -2,8 +2,8 @@
 title: "LTSF-Linear: Embarrassingly simple time series forecasting models"
 description: "A review of the 2022 Paper Are Transformers Effective for Time Series Forecasting that introduced DLinear and NLinear models"
 author: garethmd
-date: 2024-09-13
-categories: [reviews]
+date: 2024-09-16
+categories: [research]
 tags: [dms, linear, time-series, forecasting]
 image:
   path: /assets/img/linear-ltsf/banner.jpg
@@ -11,38 +11,7 @@ image:
 ---
 
 
-You know in a world where there are more transformers in machine learning research than there are 
-in my son's bedroom, it was a breath of fresh air when I read the 2022 paper
-[Are Transformers Effective for Time Series Forecasting](https://arxiv.org/pdf/2205.13504) by Zeng et al. They suggest that it's possible to achieve comparable performance by using what the authors describe as embarrasingly simple linear models. Now this struck a chord with me partly because my relationship with transformers has been patchy to say the least and partly because being a simple kinda guy I liked the idea of simple models going head to head with the heavy weights in a David vs Goliath stand off. This post is going to take a dive into the paper, the models it introduces and we'll see how they perform in the real world. All the code for this post can be found on my [nnts](https://github.com/garethmd/nnts/tree/benchmarking) github repo.
-
-## Transformers and Long Term Time Series Forecasting (LTSF)
-So the paper doesn't waste any time and from the off the authors essentially argue that the requirement for transformers
-to learn ordering through positional encoding puts it at a disadvantage because of the fact that inevitably 
-some ordering information will be lost. They claim that this is not such a big problem in NLP because there is more to natural language than the precise ordering of words, but in time-series this is not the case. 
-
-So what the authors are referring to is the fact that a transformer architecture does not intrinsically understand the temporal relationships between the data points in a time series. This is because the transformer architecture is designed to learn the relationships between the tokens in a sequence and not the relationships between the positions of the tokens. This is why we need to add positional encoding to the input data to give the model some idea of the order of the tokens.
-
-Instictively this point of view makes sense to me, but I would maybe go further. I think transformers are really well suited to learning abstract concepts, such as language and vision and that is whey excel in those fields. However, in time-series and tabular data the statistical properties that we need to make predictions or forecasts are in plain sight. 
-
-It's worth bearing in mind that when this paper was written the time-series Transformers were dominated by the "formers" family, like Informer and Autoformer, which were designed to address long forecast horizons on multivariate time series. Consequently the authors focus on comparing their models primarily in this domain although the do present some univariate results which is more interesting to me and we'll come to that later.
-
-They propose 3 models called called Linear, NLinear and DLinear which all come under the family name of LTSF-Linear. They are all single layer linear models with no non-linear activation functions. These models are designed to be simple and useful for benchmarking, but still competitive with the state of the art transformers at the time of writing.
-
-# Model Architecture
-These models share some common characteristics: the input is a time series of historical values and the output is a vector of future values whose length is the forecast horizon. This is referred to as Direct Multi-step forecasting (DMS) and is in contrast to an auto-regressive model like DeepAR which predicts one step ahead recursively. Now with there being just one linear layer and no non-linear activation function the model is linear and hence the names DLinear and NLinear. There's no proabalistic output so the experiments in the paper optimise the models using the Mean Squared Error (MSE) loss function.
-
-## DLinear
-DLinear handles the input by splitting it into 2 components. The first component is the trend and is determined by calculating the rolling average of the time series using a moving window defined by a hyperparameter "kernel size". This is then subtracted from the original timeseries to give the second component which the authors refer to as the "seasonal". The two components are then each passed through a linear layer to project them onto the forecasting output space and then summed to give the final output. 
-
-![DLinear decomposition of Tourism Monthly](/assets/img/linear-ltsf/decomp.png){: width="600" }
-*Figure 1 DLinear decomposition of Tourism Monthly*
-
-To illustrate what this means in practice *figure 1* shows the decomposition of the first series in the Tourism Monthly dataset. The plots shows, from left to right, the original time series, the seasonal component, and the trend component. Note that the seasonal component is closely centered around zero and the trend component sets the initial value and the slope over time. By separating out these components we can now project each one in isolation into the future, the theory being that it is simpler to model the trend and the seasonality separately than it is to model the signal as a single thing.
-
-If this sounds strangely familiar then you're right to think that this is not the first time this idea has been tried. Indeed decomposing a time series into separate components has been around for hundred years or so and is the basis of the well known Holt-Winters statistical model. 
-
-## NLinear
-If you think DLinear is simple then NLinear takes things to the next level. It subtracts the value of the most recent observation from the time series, which effectively scales the observation and then passes this through a single fully connected linear layer to project it onto the forecasting output space. The most recent observation is then added back to the output to give the final forecast. That's it, literally that's the model!
+[Are Transformers Effective for Time Series Forecasting](https://arxiv.org/pdf/2205.13504) by Zeng et al. They suggest  All the code for this post can be found on my [nnts](https://github.com/garethmd/nnts/tree/benchmarking) github repo.
 
 # Multivariate vs Univariate
 Primarily the paper is interested in the performance in a multivariate setting as the majority of the transformer architectures that it compares itself to are intended for multivariate time series forecasting. So I want to 
@@ -62,8 +31,7 @@ Local forecasting is where we create a model for just one time series. So in our
 
 Global forecasting attempted to address this, by creating a single model that can forecast all the time series in the dataset. This is more scalable and most if not all neural network univariate models are global models and report their results as such.
 
-DLinear follows a trend in recent multivariate forecasting research which takes an approach that is neither local nor global. 
-Firstly, the model architecture can be configured to operate in a "univariate mode", referred to as channel independence. Essentially this means that a set of linear layers are created for each time series in the dataset. The weights of these layers are dedicated to one time series and are not shared. Because the model only has 
+DLinear follows a trend in recent multivariate forecasting research which takes an approach that is neither local nor global. Firstly, the model architecture can be configured to operate in a "univariate mode", referred to as channel independence. Essentially this means that a set of linear layers are created for each time series in the dataset. The weights of these layers are dedicated to one time series and are not shared. Because the model only has 
 one layer it means that none of the learnable parameters are shared between the time series. To all intents and purposes this is a local model. However, everything else about the model is global. We sample all the time series in each training example, we calculate the loss across all the time series and we update the weights of the model based on the loss. In this univariate setting the model has a bit of an identity crisis. 
 
 What really concerns me about this approach, that nobody seems to have thought about is the impact this has on performance. In this channel independent configuration we no longer have one big matrix calculation for all the time-series as would be the case in the multivariate setting, but instead we have lots of little matrix calculations (two for each time-series in the dataset). Now that may not be an issue if there are few hundred time-series in the dataset, but when have tens or hundreds of thousands of timeseries then performance just grinds down to a crawl. At scale this approach just does not work. We will see just how much of an issue this is later, but in my opinion this has not been addressed in the paper, in part because of the way that the univariate experiments are run which we will discuss next. 
@@ -118,22 +86,6 @@ So now let's turn our attention to how well each configuration performs in terms
 
  Unsurprisingly the Local and Independent results do appear to be closely related, however there also seems to be an association between the Multivariate and the Global results. For example the two best performing configurations for Car parts are Multivariate and Global both with a MASE of ~0.75 and Local and Independent have similar errors of ~1.3 and ~1.4 respectively. NLinear has the same pattern of behaviour. Clearly the characteristics of certain datasets tend to benefit from sharing information between time-series. These results seem to suggest some evidence that for these Linear models information can be shared using univariate or multivariate methods to a similar effect.  Given the limitations of multivariate models it would be interesting to see if this observation holds for other multivariate models.
 
-
-# Performance to other models
-As a final comparison I have also included in *table 3* the multivariate results of DLinear with the best performing model from the [Monash benchmarks](https://forecastingdata.org/)
-
-| Model             | DLinear Multivariate | Monash Best |
-|-------------------|--------|-------------|
-| Car parts         | 0.752        | **0.746** (Transformer) | 
-| Covid deaths      | 5.601        | **5.326** (ETS)  |
-| Electricity hourly| 1.880        | **1.606** (Wavenet)  |
-| Electricity weekly| 0.780        | **0.769** (FFNN)  |
-| Traffic hourly    | 0.923        | **0.821** (Transformer)  |
-| Traffic weekly    | 1.096        | **1.084** (Prophet)  |
-
-*Table 3 DLinear MASE compared to best performing model from the Monash benchmarks. The best error is shown in **bold***
-
-So what's the phrase? Close but no cigar. The DLinear model is competitive with the best models in the Monash benchmarks, but it's not quite there, and considering that Electricity Hourly and Traffic Hourly have comparatively long forecast horizons that's perhaps a tad disappointing as one would expect the linear models to perform better on these datasets. 
 
 
 # Conclusion
