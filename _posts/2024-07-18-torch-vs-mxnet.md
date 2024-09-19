@@ -1,5 +1,5 @@
 ---
-title: "Pytorch vs MXNet. Which is faster?"
+title: "Pytorch vs MXNet: Which is faster?"
 description: "An analysis of the computational efficiency of Pytorch and MXNet"
 author: garethmd
 date: 2024-07-18

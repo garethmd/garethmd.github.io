@@ -1,5 +1,5 @@
 ---
-title: "State of the art timeseries forecasting with 1Cycle scheduling"
+title: "1Cycle scheduling: State of the art timeseries forecasting"
 description: "How to get state of the art timeseries forecasting results using machine learning with my variant of DeepAR and 1Cycle Scheduling"
 author: garethmd
 date: 2024-06-21

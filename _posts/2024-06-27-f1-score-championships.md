@@ -1,5 +1,5 @@
 ---
-title: "The F1 Score Time Series Model Championships"
+title: "The F1 Score: Time Series Model Championships"
 description: "A ranking system of time series models based on the Monash dataset benchmarks using the mase metric and the formula 1 scoring system."
 author: garethmd
 date: 2024-07-04

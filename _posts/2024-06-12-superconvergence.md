@@ -1,5 +1,5 @@
 ---
-title: "Supercharge your Neural Networks with Super-convergence"
+title: "Super-convergence: Supercharge your Neural Networks"
 description: "A look at 1Cycle scheduling, one of my favourite techniques at improving model performance and practical guidance on how to use it"
 author: garethmd
 date: 2024-06-12

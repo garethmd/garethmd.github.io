@@ -1,5 +1,5 @@
 ---
-title: "A look at Teacher Forcing and it's alternatives"
+title: "Teacher Forcing: A look at what it is and the alternatives"
 description: "Review of teacher forcing, free running, scheduled-sampling, professor forcing and attention forcing for training auto-regresssive neural networks"
 author: garethmd
 date: 2024-02-06
